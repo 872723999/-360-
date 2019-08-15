@@ -1,0 +1,21 @@
+/* 导航 */
+.navTop { width: 100%;height: 1.546666rem;line-height: 1.546666rem;text-align: center;position: fixed;top: 0;background-color: #FFFFFF;z-index: 999; }
+.navTop .navButton { width: 0.64rem;height: 0.506666rem;background: url(/static/mobile/img/index/fenlei.png) no-repeat center center;background-size: cover;top: 0.573333rem;left: 0.373333rem;position: absolute; }
+.navTop .logo { width: 3.2rem;height: 0.88rem;display: inline-block;margin-top: 0.373333rem; }
+.navTop .logo img { width: 100%;height: 100%; }
+.navTop .search { width: 0.466666rem;height: 0.493333rem;background: url(/static/mobile/img/index/sousuo.png) no-repeat center center;background-size: 100%;position: absolute;right: 0.373333rem;top: 0.573333rem; }
+.navTop .phone { width: 0.826666rem;height: 0.826666rem;background-image: url(/static/mobile/img/article/list/phone.png);top: 0.36rem; }
+/* 导航占位 */
+.navBox { width: 100%;height: 1.546666rem; }
+/* 汉堡导航阴影 */
+.navigationHidden { width: 100%; height: 100%; background-color: rgba(0,0,0,0.4); position: fixed; left: 0; top: 0; z-index: 99999998; display: none; }
+/* 汉堡导航 */
+.navigation { width: 4.906666rem; height: 100%; position: fixed; left: -4.906666rem; top: 0; background-color: #333333; z-index: 99999999; }
+.navigationTop { height: 2.186666rem; background-color: #FFFFFF; overflow: hidden; }
+.navigationTop img { width: 3.573333rem; height: 0.986666rem; display: block; margin: 0.333333rem auto 0.106666rem; }
+.navigationTop p { width: 100%; text-align: center; font-size: 0.32rem; }
+.navigation ul { width: 3.626666rem; margin: 0.72rem auto 0; color: #FFFFFF; }
+.navigation ul li { font-size: 0.373333rem; margin-bottom: 0.693333rem; }
+.navigation ul li .liT { border-bottom: 0.026666rem solid #707070; padding-bottom: 0.293333rem; }
+.navigation ul li .liHidden { padding-top: 0.426666rem;display: none; }
+.navigation ul li .liHidden a { font-size: 0.32rem; color: #FFFFFF; line-height: 0.773333rem; font-weight: 300; }

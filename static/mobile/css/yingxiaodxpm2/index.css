@@ -1,0 +1,583 @@
+/* 头尾悬浮 */
+.t_f,
+.b_f {
+    width: 100%;
+    height: 1.253333rem;
+    background-color: #127BCC;
+    position: fixed;
+    z-index: 998;
+    font-size: 0;
+}
+
+.t_f1,
+.b_f1 {
+    width: 100%;
+    height: 1.253333rem;
+}
+
+.t_f a,
+.b_f a {
+    display: inline-block;
+    font-size: 0.373333rem;
+    line-height: 1.253333rem;
+    color: #ffffff;
+    width: 33%;
+    text-align: center;
+    box-sizing: border-box;
+    border-right: 0.026667rem solid #ffffff;
+}
+
+.t_f a:last-child,
+.b_f a:last-child {
+    border-right: 0;
+}
+
+.t_f a::before,
+.b_f a::before {
+    content: '';
+    width: 0.453333rem;
+    height: 0.453333rem;
+    background: url(../../img/yingxiaodxpm2/1.png) no-repeat center center;
+    background-size: contain;
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 0.053333rem;
+    margin-right: 0.133333rem;
+}
+
+.t_f a:nth-child(2)::before {
+    background-image: url(../../img/yingxiaodxpm2/2.png);
+}
+
+.t_f a:nth-child(3)::before {
+    background-image: url(../../img/yingxiaodxpm2/3.png);
+}
+
+.b_f a::before {
+    background-image: url(../../img/yingxiaodxpm2/4.png);
+}
+
+.b_f a:nth-child(2)::before {
+    background-image: url(../../img/yingxiaodxpm2/5.png);
+}
+
+.b_f a:nth-child(3)::before {
+    background-image: url(../../img/yingxiaodxpm2/6.png);
+}
+
+.t_f {
+    top: 0;
+}
+
+.b_f {
+    bottom: 0;
+}
+
+/* banner */
+.banner {
+    width: 100%;
+    height: 4.96rem;
+}
+
+.banner .swiper-container img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.banner .swiper-pagination span {
+    opacity: 1;
+    background-color: #ffffff;
+    width: 0.586667rem;
+    height: 0.16rem;
+    margin-right: 0.133333rem;
+    border-radius: 0;
+}
+
+.banner .swiper-pagination span:last-child {
+    margin-right: 0;
+}
+
+.banner .swiper-pagination span.swiper-pagination-bullet-active {
+    background-color: #FF7062;
+}
+
+/* title */
+h3.title {
+    text-align: center;
+    font-size: 0.586667rem;
+    padding: 0.613333rem 0 0.586667rem;
+}
+
+/* 出国留学你需要了解这些 */
+.liaojie .content {
+    width: 9.253333rem;
+    margin: 0 auto;
+}
+
+.liaojie .content .box {
+    width: 2.88rem;
+    height: 1.12rem;
+    background: url(../../img/yingxiaodxpm2/diyi.png) no-repeat center center;
+    background-size: cover;
+    background-color: transparent;
+    font-size: 0.426667rem;
+    color: #ffffff;
+    line-height: 1.12rem;
+    text-indent: 0.266667rem;
+    margin-bottom: 0.266667rem;
+    margin-right: 0.266667rem;
+}
+
+.liaojie .content .box:nth-child(3n) {
+    margin-right: 0;
+}
+
+/* a,a */
+a.a {
+    width: 7.626667rem;
+    height: 1.12rem;
+    background: linear-gradient(180deg, rgba(249, 110, 57, 1) 0%, rgba(223, 72, 14, 1) 100%);
+    box-shadow: 0px 2px 4px rgba(36, 15, 7, 0.32);
+    border-radius: 0.133333rem;
+    font-size: 0.48rem;
+    color: #ffffff;
+    text-align: center;
+    line-height: 1.12rem;
+    margin: 0.4rem auto 0.906667rem;
+}
+
+/* 留学各项费用一览表 */
+.feiyong {
+    width: 100%;
+    height: 12.453333rem;
+    background-color: #EFEFEF;
+}
+
+.feiyong .content {
+    width: 9.253333rem;
+    margin: 0 auto;
+}
+
+.feiyong .content .box {
+    width: 2.88rem;
+    height: 3.586667rem;
+    box-sizing: border-box;
+    border: 0.026667rem solid #3AA7E7;
+    border-radius: 0.133333rem;
+    background-color: #ffffff;
+    margin-bottom: 0.32rem;
+    margin-right: 0.266667rem;
+}
+
+.feiyong .content .box:nth-child(3n) {
+    margin-right: 0;
+}
+
+.feiyong .content .box img {
+    width: 1.36rem;
+    height: 1.36rem;
+    display: block;
+    margin: 0.266667rem auto 0.186667rem;
+}
+
+.feiyong .content .box h4 {
+    text-align: center;
+    font-size: 0.373333rem;
+}
+
+.feiyong .content .box a {
+    width: 100%;
+    height: 0.666667rem;
+    background: linear-gradient(180deg, rgba(58, 167, 231, 1) 0%, rgba(53, 150, 207, 1) 100%);
+    text-align: center;
+    line-height: 0.666667rem;
+    font-size: 0.373333rem;
+    color: #ffffff;
+    position: absolute;
+    bottom: 0;
+}
+
+/* 选择入学阶段 */
+.jieduan .content {
+    width: 9.253333rem;
+    margin: 0 auto;
+}
+
+.jieduan .content .box {
+    width: 2.88rem;
+    height: 1.973333rem;
+    border: 0.026667rem solid #3AA7E7;
+    border-radius: 0.16rem;
+    box-sizing: border-box;
+    margin-bottom: 0.213333rem;
+    margin-right: 0.266667rem;
+}
+
+.jieduan .content .box:nth-child(3n) {
+    margin-right: 0;
+}
+
+.jieduan .content .box h4 {
+    font-size: 0.373333rem;
+    color: #3AA7E7;
+    line-height: 0.48rem;
+    padding: 0.106667rem 0 0.16rem;
+    text-align: center;
+}
+
+.jieduan .content .box a {
+    width: 2.44rem;
+    height: 0.533333rem;
+    text-align: center;
+    line-height: 0.533333rem;
+    font-size: 0.32rem;
+    color: #ffffff;
+    margin: 0 auto;
+    background-color: #3AA7E7;
+    border-radius: 0.266667rem;
+}
+
+/* 留学热门专业一览表 */
+.zhuanye .content {
+    width: 9.253333rem;
+    height: 13.2rem;
+    border: 0.026667rem solid #E5E5E5;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.23);
+    margin: 0 auto;
+}
+
+.zhuanye .content>div {
+    width: 100%;
+}
+
+.zhuanye .content h3 {
+    width: 2.186667rem;
+    height: 0.72rem;
+    font-size: 0.426667rem;
+    color: #ffffff;
+    line-height: 0.72rem;
+    background-color: #3AA7E7;
+    border-radius: 0 0.266667rem 0.266667rem 0;
+    text-align: center;
+    margin-top: 0.533333rem;
+}
+
+.zhuanye .content a.a1 {
+    width: 3.4rem;
+    height: 0.72rem;
+    background-color: #3AA7E7;
+    line-height: 0.72rem;
+    font-size: 0.373333rem;
+    color: #ffffff;
+    text-indent: 0.266667rem;
+    border-radius: 0.4rem;
+    position: relative;
+    margin-top: 0.526667rem;
+}
+
+.zhuanye .content a.a1::after,
+.zhuanye .content .box>div .tt a::after {
+    content: '>';
+    width: 0.506667rem;
+    height: 0.506667rem;
+    color: #379EDB;
+    background-color: #ffffff;
+    position: absolute;
+    right: 0.12rem;
+    top: 50%;
+    margin-top: -0.253333rem;
+    line-height: 0.506667rem;
+    border-radius: 50%;
+    text-align: center;
+    text-indent: 0;
+}
+
+.zhuanye .content .box {
+    width: 8.76rem;
+    margin: 0.266667rem auto 0;
+}
+
+.zhuanye .content .box>div {
+    width: 2.773333rem;
+    height: 2.666667rem;
+    background: url(../../img/yingxiaodxpm2/shangke1.jpg) no-repeat center center;
+    background-size: cover;
+    overflow: hidden;
+    margin-right: 0.213333rem;
+}
+
+.zhuanye .content .box>div.b2 {
+    background-image: url(../../img/yingxiaodxpm2/shangke2.jpg);
+}
+
+.zhuanye .content .box>div.b3 {
+    background-image: url(../../img/yingxiaodxpm2/shangke3.jpg);
+    margin-right: 0;
+}
+
+.zhuanye .content .box.gk>div {
+    background-image: url(../../img/yingxiaodxpm2/gongke1.jpg);
+}
+
+.zhuanye .content .box.gk>div.b2 {
+    background-image: url(../../img/yingxiaodxpm2/gongke2.jpg);
+}
+
+.zhuanye .content .box.gk>div.b3 {
+    background-image: url(../../img/yingxiaodxpm2/gongke3.jpg);
+}
+
+.zhuanye .content .box.ys>div {
+    background-image: url(../../img/yingxiaodxpm2/yishu1.jpg);
+}
+
+.zhuanye .content .box.ys>div.b2 {
+    background-image: url(../../img/yingxiaodxpm2/yishu2.jpg);
+}
+
+.zhuanye .content .box.ys>div.b3 {
+    background-image: url(../../img/yingxiaodxpm2/yishu3.jpg);
+}
+
+.zhuanye .content .box>div .tt {
+    width: 2.493333rem;
+    height: 1.546667rem;
+    border: 0.026667rem solid #ffffff;
+    box-sizing: border-box;
+    margin: 0.133333rem auto 0.186667rem;
+    text-align: center;
+    font-size: 0.373333rem;
+    color: #ffffff;
+}
+
+.zhuanye .content .box>div .tt::before {
+    content: '';
+    width: 0;
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.zhuanye .content .box>div .tt span {
+    display: inline-block;
+    vertical-align: middle;
+    border-bottom: 0.08rem solid #ffffff;
+    padding-bottom: 0.106667rem;
+}
+
+.zhuanye .content .box>div .tt a {
+    width: 2.48rem;
+    height: 0.56rem;
+    background-color: #3AA7E7;
+    border-radius: 0.4rem;
+    font-size: 0.32rem;
+    text-indent: 0.32rem;
+    text-align: left;
+    color: #ffffff;
+    line-height: 0.56rem;
+    position: relative;
+    margin-top: 0.186667rem;
+}
+
+.zhuanye .content .box>div .tt a::after {
+    width: 0.373333rem;
+    height: 0.373333rem;
+    margin-top: -0.186667rem;
+    line-height: 0.373333rem;
+}
+
+/* 留学热门专业一览表 */
+.remen {
+    width: 100%;
+    height: 10.666667rem;
+    background-color: #EFEFEF;
+}
+
+.remen table {
+    width: 9.253333rem;
+    border: 0.026667rem solid #85C8EF;
+    box-sizing: border-box;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+.remen table tr th,
+.remen table tr td {
+    border: 0.026667rem solid #85C8EF;
+    height: 0.96rem;
+    font-size: 0.373333rem;
+    font-weight: normal;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.remen table tr th {
+    background-color: #DAEFFB;
+}
+
+.remen table tr td a {
+    color: #3AA7E7;
+    text-decoration: underline;
+}
+
+/* 美国留学名校推荐 */
+.tuijian .content {
+    width: 9.253333rem;
+    margin: 0 auto;
+    border-top: 0.026667rem solid #B2B1B1;
+    margin-bottom: 0.933333rem;
+}
+
+.tuijian .content h4 {
+    width: 3.893333rem;
+    height: 0.666667rem;
+    text-align: center;
+    line-height: 0.666667rem;
+    font-size: 0.32rem;
+    color: #ffffff;
+    border-radius: 0.133333rem;
+    background-color: #C1C1C1;
+    margin: 0 auto;
+    margin-top: -0.333333rem;
+    margin-bottom: 0.32rem;
+}
+
+.tuijian .swiper-container .swiper-slide {
+    width: 2.933333rem;
+    height: 3.52rem;
+    border: 0.026667rem solid #DFDFDF;
+    box-sizing: border-box;
+}
+
+.tuijian .swiper-container .swiper-slide img {
+    width: 1.493333rem;
+    height: 1.493333rem;
+    margin: 0.32rem auto 0.32rem;
+    display: block;
+}
+
+.tuijian .swiper-container .swiper-slide p {
+    font-size: 0.32rem;
+    line-height: 0.533333rem;
+    text-align: center;
+}
+
+.tuijian .swiper-pagination {
+    position: static;
+    margin-top: 0.4rem;
+}
+
+.tuijian .swiper-pagination span {
+    margin-right: 0.12rem;
+}
+
+.tuijian .swiper-pagination span:last-child {
+    margin-right: 0;
+}
+
+/* 名师推荐 */
+.mingshi .box {
+    width: 9.253333rem;
+    height: 3.893333rem;
+    border: 0.026667rem solid #EEEBEB;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.23);
+    margin: 0 auto 0.373333rem;
+}
+
+.mingshi .box img {
+    width: 3.253333rem;
+    height: 3.253333rem;
+    margin: 0.293333rem 0.4rem 0 0.32rem;
+}
+
+.mingshi .box>div.fl {
+    width: 4.8rem;
+}
+
+.mingshi .box>div.fl h4 {
+    font-size: 0.373333rem;
+    padding: 0.48rem 0 0.16rem;
+    color: #3AA7E7;
+}
+
+.mingshi .box>div.fl p {
+    font-size: 0.32rem;
+    line-height: 0.48rem;
+    margin-bottom: 0.373333rem;
+}
+
+.mingshi .box>div.fl span {
+    font-size: 0.32rem;
+    line-height: 0.48rem;
+}
+
+
+/* 弹窗 */
+.tc {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 999;
+    display: none;
+}
+
+.tc>div {
+    width: 100%;
+    height: 8.24rem;
+    background: url(../../img/yingxiaodxpm/biaodan1.jpg) no-repeat center center;
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    margin-top: -4.12rem;
+}
+
+.tc .title {
+    padding-bottom: 0.053333rem;
+}
+
+.tc>div>p {
+    text-align: center;
+    font-size: 0.426667rem;
+    padding-bottom: 0.666667rem;
+}
+
+.tc>span {
+    width: 1.6rem;
+    height: 1.6rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.tc img {
+    width: 0.586667rem;
+    height: 0.586667rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -0.293333rem;
+    margin-top: -0.293333rem;
+}
+
+.tc input,
+.tc button {
+    display: block;
+    width: 9.253333rem;
+    height: 1.226667rem;
+    border: 0.026667rem solid #F57474;
+    border-radius: 0.04rem;
+    text-indent: 0.346667rem;
+    font-size: 0.373333rem;
+    background-color: #ffffff;
+    margin: 0 auto 0.666667rem;
+}
+
+.tc button {
+    background-color: #F61906;
+    color: #ffffff;
+    border: none;
+}

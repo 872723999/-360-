@@ -1,0 +1,94 @@
+#ttt {
+    margin-bottom: 40px;
+}
+
+#ttt h3 {
+    text-align: center;
+    font-size: 38px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+#ttt .tTitle {
+    font-size: 0;
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+#ttt .tTitle span,
+#ttt .tTitle em {
+    font-size: 20px;
+    font-weight: bold;
+    display: inline-block;
+    color: #999999;
+}
+
+#ttt .tTitle em {
+    padding: 0 62px;
+}
+
+#ttt .tTitle span {
+    padding-bottom: 16px;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+}
+
+#ttt .tTitle span.active {
+    color: #555555;
+    border-color: #555555;
+}
+
+#ttt .content {
+    display: none;
+}
+
+#ttt .content ul {
+    width: 30%;
+    margin-right: 4.5%;
+    font-size: 16px;
+}
+
+#ttt .content ul li {
+    width: 100%;
+    margin-bottom: 18px;
+}
+
+#ttt .content ul li a {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: left !important;
+    color: #333333;
+}
+
+#ttt .content>a {
+    width: 20%;
+    margin-bottom: 16px;
+    text-align: center !important;
+    color: #333333;
+}
+
+#ttt .content ul li a:hover {
+    color: #FF7062;
+}
+
+#navBottom {
+    font-size: 15px;
+    margin-bottom: 42px;
+    color: #DBD8D8;
+}
+
+#navBottom a {
+    display: inline-block;
+    color: #DBD8D8;
+    text-align: left !important;
+}
+
+#navBottom span {
+    color: #DBD8D8;
+    margin: 0 5px;
+}
+
+#navBottom a:hover {
+    color: #FF7062;
+}

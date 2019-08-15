@@ -1,0 +1,148 @@
+.formTwo {
+    width: 170px;
+    height: 344px;
+    background: url(/static/home/img/yingxiaoForm/formTwoBack.png) no-repeat center center;
+    background-size: cover;
+    position: fixed;
+    left: 0;
+    top: 50%;
+    display: block;
+    z-index: 9999999999;
+}
+
+.formTwo .name {
+    width: 137px;
+    margin: 0 auto;
+    margin-top: 109px;
+}
+
+.formTwo .name span {
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+.formTwo .name input {
+    width: 93px;
+    height: 20px;
+    border: 1px solid #FFFFFF;
+    font-size: 14px;
+    text-indent: 5px;
+    color: #FFFFFF;
+}
+
+.formTwo h3 {
+    font-size: 14px;
+    color: #FFFFFF;
+    font-weight: normal;
+    width: 137px;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 8px;
+}
+
+.formTwo>input {
+    width: 135px;
+    height: 20px;
+    border: 1px solid #FFFFFF;
+    display: block;
+    margin: 0 auto;
+    font-size: 14px;
+    text-indent: 5px;
+    color: #FFFFFF;
+}
+
+.formTwo>input::-webkit-input-placeholder {
+    /* placeholder颜色  */
+    color: #FFFFFF;
+}
+
+.formTwo>select {
+    width: 137px;
+    height: 22px;
+    border: 1px solid #FFFFFF;
+    display: block;
+    margin: 0 auto;
+    color: #FFFFFF;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.formTwo>select option {
+    color: #333333;
+}
+
+.formTwo>span {
+    width: 137px;
+    height: 27px;
+    background: url(/static/home/img/yingxiaoForm/buttonTwo.png) no-repeat center center;
+    background-size: cover;
+    position: absolute;
+    bottom: 34px;
+    left: 50%;
+    margin-left: -68.5px;
+    cursor: pointer;
+}
+
+.formTwo>em {
+    width: 11px;
+    height: 11px;
+    display: block;
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    background: url(/static/home/img/yingxiaoForm/baiX.png) no-repeat center center;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.formTwoBox {
+    width: 43px;
+    height: 143px;
+    background: url(/static/home/img/yingxiaoForm/formTwo.png) no-repeat center center;
+    position: fixed;
+    top: 50%;
+    left: 0;
+    cursor: pointer;
+    display: none;
+    z-index: 9999999999;
+}
+
+.rightFormBox {
+    width: 43px;
+    height: 120px;
+    background: url(/static/home/img/yingxiaoForm/rightFormBox.png) no-repeat center center;
+    background-size: cover;
+    position: fixed;
+    right: 0;
+    top: 25%;
+    cursor: pointer;
+    display: none;
+    z-index: 9999999999;
+}
+
+.rightForm {
+    width: 134px;
+    height: 369px;
+    background: url(/static/home/img/yingxiaoForm/rightForm.png) no-repeat center center;
+    background-size: cover;
+    position: fixed;
+    top: 25%;
+    right: 0;
+    cursor: pointer;
+    display: block;
+    z-index: 999999;
+}
+
+#spanX {
+    width: 11px;
+    height: 11px;
+    display: block;
+    position: fixed;
+    right: 0;
+    top: 24%;
+    background: url(/static/home/img/yingxiaoForm/heiX.png) no-repeat center center;
+    background-size: cover;
+    cursor: pointer;
+    display: block;
+    z-index: 9999999999;
+}

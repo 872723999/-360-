@@ -1,0 +1,234 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+footer {
+	width: 100%;
+	height: 48px;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	z-index: 99;
+}
+.xbanxin{width:1000px;margin: 0 auto;}
+footer .fot-1 {
+	width: 50%;
+	background-color: #e2860f;
+	position: relative;
+}
+ .bypass{overflow: hidden;/*超出部分隐藏*/white-space: nowrap;/*不换行*/text-overflow:ellipsis;/*超出部分文字以...显示*/}  
+footer .fot-2 {
+	width: 50%;
+	background-color:#ebae5e;
+}
+.smf1 img, .smf2 img {
+    width: 20px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.smf1 {
+    display: block;
+    text-align: center;
+    line-height: 48px;
+    color: #FFF;
+    font-size: 16px;
+}
+.smf2 {
+    display: block;
+    text-align:center;
+    font-size:16px;
+    line-height:48px;
+    height:48px;
+    color:#fff;
+}
+body {
+	color: #333;
+	font-family: "microsoft yahei";
+	background:#fff;
+	box-sizing: border-box;
+    margin: 0 auto;
+    max-width:1920px;
+}
+i{font-style:normal;}
+.wrap{
+	padding: 0 10px 5px;
+}
+ol,
+ul {
+	list-style: none;
+}
+
+em {
+	font-style: normal;
+}
+.add{
+	font-style: italic;
+}
+input{
+	input[type=button], input[type=submit], input[type=file], button { cursor: pointer; -webkit-appearance: none; }
+}
+input,
+button,
+select,
+textarea {
+	outline: none;
+}
+
+img {
+	border: none;
+}
+
+div {
+	position: relative;
+}
+
+a{
+	color: #000;
+	text-decoration: none;
+	display: block;
+	cursor:pointer;
+}
+
+.fl {
+	float: left;
+	display: inline;
+}
+
+.fr {
+	float: right;
+	display: inline;
+}
+
+#Page {
+	max-width: 650px;
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+}
+
+.none {display:none;}
+
+.clearfix:before,
+.clearfix:after {
+	display: table;
+	content: " ";
+}
+
+.clearfix:after {clear: both;}
+.set-1 {width: 60%;}
+.set-2 {width: 96%;}
+.set-3 {width: 60%;}
+.inf-select {height:38px;line-height:38px;border-radius:4px;background:#fff;width:34%;margin-right:2%;border:1px solid #D8D8D8;text-align:center;float:right;}
+.submit {width: 96%;
+	display: block;
+	background: #BA0F1B;
+	color: #fff;
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+	border-radius: 4px;
+	font-size: 18px;
+	margin: 10px auto;
+	border: none;
+	outline: medium;
+}
+
+label.error {
+	color: #f00;
+}
+
+.btn-bottom {
+	width: 96%;
+	background: #BA0F1B;
+	color: #fff;
+	text-align: center;
+	height: 40px;
+	display: block;
+	border-radius: 4px;
+	line-height: 40px;
+	margin: 15px 0px;
+	margin-left: 2%;
+	font-size: 18px;
+}
+
+.blank-warp {
+	width: 96%;
+	display: block;
+	margin: 0 auto;
+}
+
+.sec_heading {
+	margin-top: 20px;
+}
+
+.sec_heading .unit_title img {
+	width: 86%;
+	display: block;
+	margin: 0 auto;
+}
+
+.sec_heading .unit_title h1 {
+	position: absolute;
+	width: 60%;
+	height: 26px;
+	line-height: 26px;
+	top: 50%;
+	left: 50%;
+	margin-top: -13px;
+	margin-left: -30%;
+	text-align: center;
+	font-weight: normal;
+}
+
+.sec_heading .title_down {
+	font-size: 12px;
+	color: #666;
+	text-align: center;
+	height: 24px;
+	line-height: 24px;
+	margin-bottom: 15px;
+}
+
+.sec_heading .title_down span {
+	display: inline-block;
+	width: 6px;
+	height: 6px;
+	margin: 0 6px;
+	background: #BA0F1B;
+	text-align: center;
+	color: #BA0F1B;
+	border-radius: 50%;
+}
+@media only screen and (max-width:375px) {
+	.unit_content .con ul li a{
+		font-size: 12px;
+	}
+}
+/*布局样式*/
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex-sb {
+  justify-content: space-between;
+  /*两端对齐*/
+  -webkit-box-pack: space-between;
+}
+.banxin{margin: 0 auto;width: 1200px;}
+
+
+/* GuoJingChao */
+.gWidth{ width: 1024px; margin-left: auto; margin-right: auto; }
+.gWidth1200{ width: 1200px; margin-left: auto; margin-right: auto; }
+.gWidth1170{ width: 1170px; margin-left: auto; margin-right: auto; }
+.left{ float: left; }
+.right{ float: right; }
+.daoshi{margin-left: 120px;}
+input,select,textarea,button{background-color: transparent; border: none; outline: none;}
+textarea{resize: none;}/*右下角的小尾巴*/
+img{ border: none; }
+
+a.abchover { background-color: #FF7062 !important; border-color: #FF7062 !important; color: #FFFFFF !important; }
+a.abchover:hover { opacity: 0.8; }

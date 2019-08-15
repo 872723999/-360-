@@ -1,0 +1,61 @@
+.formOne {
+    width: 170px;
+    height: 120px;
+    background: url(/static/home/img/yingxiaoForm/formOneBack.png) no-repeat center center;
+    background-size: cover;
+    position: fixed;
+    left: 0;
+    top: 25%;
+    display: block;
+    z-index: 9999999999;
+}
+
+.formOne input {
+    width: 126px;
+    height: 23px;
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 47px;
+    left: 50%;
+    margin-left: -63px;
+    font-size: 14px;
+    text-indent: 10px;
+}
+
+.formOne span {
+    display: block;
+    width: 90px;
+    height: 27px;
+    background: url(/static/home/img/yingxiaoForm/buttonOne.png) no-repeat center center;
+    background-size: cover;
+    position: absolute;
+    left: 50%;
+    margin-left: -45px;
+    bottom: 13px;
+    cursor: pointer;
+}
+
+.formOne em {
+    width: 11px;
+    height: 11px;
+    background: url(/static/home/img/yingxiaoForm/heiX.png) no-repeat center center;
+    background-size: cover;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+.formOneBox {
+    width: 43px;
+    height: 120px;
+    background: url(/static/home/img/yingxiaoForm/formOne.png) no-repeat center center;
+    background-size: cover;
+    position: fixed;
+    top: 25%;
+    left: 0;
+    cursor: pointer;
+    display: none;
+    z-index: 9999999999;
+}

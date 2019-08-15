@@ -1,0 +1,108 @@
+.formDd {
+	width: 84px;
+	height: 84px;
+	border-radius: 3px;
+	background-color: #333333;
+	position: fixed;
+	left: 0;
+	top: 50%;
+	z-index: 999999;
+	text-align: center;
+	cursor: pointer;
+}
+
+.formDd p {
+	font-size: 16px;
+	line-height: 24px;
+	color: #FFFFFF;
+	text-align: center;
+	margin-top: 17px;
+}
+
+.formDbox {
+	width: 192px;
+	height: 328px;
+	background-color: #000000;
+	background-color: rgba(0, 0, 0, 0.5);
+	position: fixed;
+	left: 0;
+	top: 25%;
+	z-index: 999999;
+}
+
+.formDbox .ftop {
+	width: 100%;
+	height: 96px;
+	background-color: #000000;
+	background-color: rgba(0, 0, 0, 0.3);
+	margin-bottom: 22px;
+}
+
+.formDbox .ftop img.x {
+	width: 8px;
+	height: 8px;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	cursor: pointer;
+}
+
+.formDbox input,
+.formDbox select {
+	width: 153px;
+	height: 36px;
+	border-radius: 3px;
+	background-color: #FFFFFF;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	padding-left: 10px;
+	font-size: 15px;
+	line-height: 36px;
+}
+
+.formDbox select {
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	width: 163px;
+	color: #787878;
+}
+
+.formDbox button {
+	width: 163px;
+	height: 36px;
+	background-color: #FF7062;
+	border-radius: 3px;
+	color: #FFFFFF;
+	text-align: center;
+	line-height: 36px;
+	font-size: 15px;
+	display: block;
+	margin: 0 auto;
+	margin-top: 16px;
+	cursor: pointer;
+}
+
+.formDbox input::-webkit-input-placeholder {
+	color: #787878;
+}
+
+.formDbox input::-moz-placeholder {
+	color: #787878;
+}
+
+.formDbox input:-ms-input-placeholder {
+	color: #787878;
+}
+
+.formDbox .ftop {
+	overflow: hidden;
+}
+
+.formDbox .ftop .img {
+	width: 163px;
+	display: block;
+	margin: 0 auto;
+	margin-top: 20px;
+}

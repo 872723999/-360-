@@ -1,0 +1,128 @@
+ /* banner */
+ .banner {
+     width: 100%;
+     height: 312px;
+     background: url(/static/home/img/schoolk/highinfo/banner1.jpg) no-repeat center center;
+     background-size: cover;
+ }
+
+ .banner .breadNav {
+     color: #ffffff;
+     font-size: 0;
+     padding: 20px 0 41px;
+ }
+
+ .banner .breadNav a {
+     display: inline-block;
+     color: #ffffff;
+     font-size: 14px;
+ }
+
+ .banner .breadNav span {
+     font-size: 14px;
+     display: inline-block;
+     margin: 0 5px;
+ }
+
+ .banner .breadNav a:hover {
+     text-decoration: underline;
+ }
+
+ .banner .schoolInfo>div.fl img {
+     width: 152px;
+     height: 152px;
+     border-radius: 50%;
+     background-color: #ffffff;
+ }
+
+ .banner .schoolInfo>div.fl>div.fl {
+     margin-left: 33px;
+ }
+
+ .banner .schoolInfo>div.fl>div.fl h3 {
+     font-size: 30px;
+     color: #ffffff;
+     margin-bottom: 2px;
+ }
+
+ .banner .schoolInfo>div.fl>div.fl p {
+     font-size: 18px;
+     color: #ffffff;
+     margin-bottom: 18px;
+ }
+
+ .banner .schoolInfo>div.fl>div.fl span,
+ .banner .schoolInfo>div.fl>div.fl em {
+     font-size: 16px;
+     color: #ffffff;
+     display: block;
+ }
+
+ .banner .schoolInfo>div.fl>div.fl span {
+     margin-bottom: 12px;
+ }
+
+ .banner .schoolInfo>div.fl>div.fl span::before,
+ .banner .schoolInfo>div.fl>div.fl em::before {
+     content: '';
+     width: 22px;
+     height: 22px;
+     background: url(/static/home/img/schoolk/uninfo/dingwei.png) no-repeat center center;
+     background-size: cover;
+     display: inline-block;
+     vertical-align: middle;
+     margin-bottom: 2px;
+     margin-right: 8px;
+ }
+
+ .banner .schoolInfo>div.fl>div.fl em::before {
+     background-image: url(/static/home/img/schoolk/uninfo/wangzhi.png);
+ }
+
+ .banner .schoolInfo>div.fr .frt {
+     width: 206px;
+ }
+
+ .banner .schoolInfo>div.fr .frt>div {
+     width: 103px;
+     text-align: center;
+     margin: 0 auto;
+ }
+
+ .banner .schoolInfo>div.fr .frt>div span {
+     width: 56px;
+     height: 56px;
+     display: block;
+     text-align: center;
+     line-height: 56px;
+     font-size: 24px;
+     font-weight: bold;
+     color: #ffffff;
+     background-color: #ffffff;
+     background-color: rgba(255, 255, 255, 0.5);
+     border-radius: 50%;
+     margin: 0 auto;
+     margin-bottom: 2px;
+ }
+
+ .banner .schoolInfo>div.fr .frt>div p {
+     font-size: 14px;
+     color: #ffffff;
+ }
+
+ .banner .schoolInfo>div.fr>a {
+     width: 206px;
+     height: 48px;
+     background-color: #FF7062;
+     border-radius: 5px;
+     text-align: center;
+     line-height: 48px;
+     color: #ffffff;
+     margin-top: 22px;
+     font-size: 18px;
+     font-weight: bold;
+ }
+
+ .banner .schoolInfo>div.fr>a:hover {
+     opacity: 0.8;
+ }

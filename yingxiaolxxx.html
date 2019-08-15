@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+	<meta name="renderer" content="webkit">
+	<link rel="shortcut icon" href="./static/home/img/favicon.ico">
+	<!-- 公共样式 -->
+	<link rel="stylesheet" href="./static/home/css/public/share.css" />
+	<!-- jQuery -->
+	<script type="text/javascript" src="./static/home/js/public/jquery-1.12.3.min.js"></script>
+	<!-- top -->
+	<link rel="stylesheet" href="./static/home/css/public/topNav.css" />
+
+	<script type="text/javascript" src="./static/home/js/public/qrcode.min.js"></script>
+
+	<!-- 粒子链接 -->
+	<script type="text/javascript" src="./static/home/js/public/canvas-particle.js"></script>
+	<!-- 数字滚动插件 -->
+	<script type="text/javascript" src="./static/home/js/public/countUp.min.js"></script>
+
+	<script type="text/javascript" src="./static/home/js/public/jquery.lazyload.js"></script>
+
+	<!-- swiper -->
+	<link rel="stylesheet" href="./static/home/css/public/swiper/idangerous.swiper.css" />
+	<script src="./static/home/js/public/swiper/idangerous.swiper.min.js" type="text/javascript" charset="utf-8">
+	</script>
+
+	<link rel="stylesheet" href="./static/home/css/common/common_calculation.css">
+
+	<script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=5SaMHni778BPbnZ1LzTmpZQzpAyrS0xi&s=1"></script>
+	<script src="https://pv.sohu.com/cityjson?ie=utf-8"></script>
+    <!-- 当前网页样式 -->
+    <link rel="stylesheet" href="./static/home/css/page/yingxiaolxxx/index.css">
+
+</head>
+
+<body>
+    <div class="nav">
+        <img src="./static/home/img/nav.png" style="display: block; margin: 15px auto;" onclick="go()" alt="">
+    </div>
+
+    <!-- banner -->
+    <div class="banner">
+        <div class="a">
+            <a onclick="go()">咨询顾问</a>
+            <a onclick="go()">领取攻略</a>
+        </div>
+    </div>
+
+    <!-- 副导航 -->
+    <div class="fNav">
+        <div class="gWidth1170">
+            <a onclick="go()">院校选择</a>
+            <a onclick="go()">专业选择</a>
+            <a onclick="go()">留学案例</a>
+            <a onclick="go()">大学排名</a>
+            <a onclick="go()">初中留学</a>
+            <a onclick="go()">高中留学</a>
+            <a onclick="go()">本科留学</a>
+            <a onclick="go()">研究生留学</a>
+            <a onclick="go()">奖学金申请</a>
+        </div>
+    </div>
+
+    <!-- 推荐list -->
+    <div class="tjList">
+        <div class="list gWidth1170 clearfix">
+            <div class="fl listBox">
+                <h3>高中名校</h3>
+                <a onclick="go()">菲利普斯学校安多佛</a>
+                <a onclick="go()" class="hot">菲利普斯埃克塞特中学</a>
+                <a onclick="go()">乔特罗斯玛丽中学</a>
+                <a onclick="go()" class="hot">圣保罗中学</a>
+                <a onclick="go()">劳伦斯威尔高中</a>
+                <a onclick="go()">迪尔菲尔德学院</a>
+                <a onclick="go()">撒切尔学校</a>
+                <a onclick="go()" class="hot">米尔顿高中</a>
+                <a onclick="go()">格里诺贵族学校</a>
+                <a onclick="go()">格罗顿学校</a>
+            </div>
+            <div class="fl listBox">
+                <h3>大学名校</h3>
+                <a onclick="go()">普林斯顿大学</a>
+                <a onclick="go()">哈佛大学</a>
+                <a onclick="go()">哥伦比亚大学</a>
+                <a onclick="go()" class="hot">麻省理工学院</a>
+                <a onclick="go()">芝加哥大学</a>
+                <a onclick="go()">耶鲁大学</a>
+                <a onclick="go()" class="hot">斯坦福大学</a>
+                <a onclick="go()" class="hot">宾夕法尼亚大学</a>
+                <a onclick="go()">杜克大学</a>
+                <a onclick="go()">约翰霍普金斯大学</a>
+            </div>
+            <div class="fl listBox">
+                <h3>常春藤盟校</h3>
+                <a onclick="go()">哈佛大学</a>
+                <a onclick="go()" class="hot">耶鲁大学</a>
+                <a onclick="go()">普林斯顿大学</a>
+                <a onclick="go()" class="hot">哥伦比亚大学</a>
+                <a onclick="go()">宾夕法尼亚大学</a>
+                <a onclick="go()">达特茅斯学院</a>
+                <a onclick="go()">布朗大学</a>
+                <a onclick="go()">康奈尔大学</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 横幅 -->
+    <div class="hengfu gWidth1170" onclick="go()">2019年留学政策出炉，点此查看>></div>
+
+    <!-- 2019年美国综合大学排名 -->
+    <div class="table zonghe">
+        <div class="tablebox gWidth1170">
+            <h3 class="title">2019年美国综合大学排名</h3>
+            <div class="tableTab">
+                <span class="active">NO.1-25</span>
+                <span>NO.26-50</span>
+                <span>NO.51-75</span>
+                <span>NO.76-100</span>
+            </div>
+            <div class="tableBox">
+                <div class="box">
+                    <table class="table1">
+                        <tr>
+                            <td>排名</td>
+                            <td>学校名称</td>
+                            <td>优势专业</td>
+                            <td>SAT/ACT分数要求</td>
+                            <td>申请条件</td>
+                            <td>奖学金</td>
+                            <td>费用要求</td>
+                        </tr>
+                    </table>
+                    <div class="box2">
+                        <table class="table2"></table>
+                    </div>
+                </div>
+                <div class="box">
+                    <table class="table1">
+                        <tr>
+                            <td>排名</td>
+                            <td>学校名称</td>
+                            <td>优势专业</td>
+                            <td>SAT/ACT分数要求</td>
+                            <td>申请条件</td>
+                            <td>奖学金</td>
+                            <td>费用要求</td>
+                        </tr>
+                    </table>
+                    <div class="box2">
+                        <table class="table2"></table>
+                    </div>
+                </div>
+                <div class="box">
+                    <table class="table1">
+                        <tr>
+                            <td>排名</td>
+                            <td>学校名称</td>
+                            <td>优势专业</td>
+                            <td>SAT/ACT分数要求</td>
+                            <td>申请条件</td>
+                            <td>奖学金</td>
+                            <td>费用要求</td>
+                        </tr>
+                    </table>
+                    <div class="box2">
+                        <table class="table2"></table>
+                    </div>
+                </div>
+                <div class="box">
+                    <table class="table1">
+                        <tr>
+                            <td>排名</td>
+                            <td>学校名称</td>
+                            <td>优势专业</td>
+                            <td>SAT/ACT分数要求</td>
+                            <td>申请条件</td>
+                            <td>奖学金</td>
+                            <td>费用要求</td>
+                        </tr>
+                    </table>
+                    <div class="box2">
+                        <table class="table2"></table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 文理学院 -->
+    <div class="table wenli blue">
+        <div class="tablebox gWidth1170">
+            <h3 class="title">2019年美国文理学院排名</h3>
+            <div class="tableTab">
+                <span class="active">NO.1-25</span>
+                <span>NO.26-50</span>
+                <span>NO.51-75</span>
+                <span>NO.76-100</span>
+            </div>
+            <div class="tableBox">
+                <div class="box">
+                    <table class="table1">
+                        <tr>
+                            <td>排名</td>
+                            <td>学校名称</td>
+                            <td>优势专业</td>
+                            <td>SAT/ACT分数要求</td>
+                            <td>申请条件</td>
+                            <td>奖学金</td>
+                            <td>费用要求</td>
+                        </tr>
+                    </table>
+                    <div class="box2">
+                        <table class="table2"></table>
+                    </div>
+                </div>
+                <div class="box">
+                    <table class="table1">
+                        <tr>
+                            <td>排名</td>
+                            <td>学校名称</td>
+                            <td>优势专业</td>
+                            <td>SAT/ACT分数要求</td>
+                            <td>申请条件</td>
+                            <td>奖学金</td>
+                            <td>费用要求</td>
+                        </tr>
+                    </table>
+                    <div class="box2">
+                        <table class="table2"></table>
+                    </div>
+                </div>
+                <div class="box">
+                    <table class="table1">
+                        <tr>
+                            <td>排名</td>
+                            <td>学校名称</td>
+                            <td>优势专业</td>
+                            <td>SAT/ACT分数要求</td>
+                            <td>申请条件</td>
+                            <td>奖学金</td>
+                            <td>费用要求</td>
+                        </tr>
+                    </table>
+                    <div class="box2">
+                        <table class="table2"></table>
+                    </div>
+                </div>
+                <div class="box">
+                    <table class="table1">
+                        <tr>
+                            <td>排名</td>
+                            <td>学校名称</td>
+                            <td>优势专业</td>
+                            <td>SAT/ACT分数要求</td>
+                            <td>申请条件</td>
+                            <td>奖学金</td>
+                            <td>费用要求</td>
+                        </tr>
+                    </table>
+                    <div class="box2">
+                        <table class="table2"></table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 上名校 如何提高申请成功率 -->
+    <div class="chenggonglv gWidth1170">
+        <h3 class="title">上名校 如何提高申请成功率</h3>
+        <div class="content clearfix">
+            <div class="box fl">
+                <div class="img">硬性条件</div>
+                <div class="b">
+                    <p>GPA、TOEFL、SAT（可选）</p>
+                    <a onclick="go()">点此提升语言成绩&gt;&gt;</a>
+                </div>
+            </div>
+            <div class="box box2 fl">
+                <div class="img">软性条件</div>
+                <div class="b">
+                    <p>奖项、活动、科研、实习</p>
+                    <a onclick="go()">咨询并查看提升方法&gt;&gt;</a>
+                </div>
+            </div>
+            <div class="box box3 fl">
+                <div class="img">个人背景</div>
+                <div class="b">
+                    <p>文书、作品集、活动、项目、<br />个人简历</p>
+                    <a onclick="go()">咨询并查看准备方案&gt;&gt;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 名校喜欢什么样的学生 -->
+    <div class="likeStu gWidth1170">
+        <h3 class="title">名校喜欢什么样的学生</h3>
+        <div class="content clearfix">
+            <div class="box fl">
+                <div class="t clearfix">
+                    <img src="./static/home/img/page/yingxiaolxxx/mxicon1.png" class="fl" alt="">
+                    <h4 class="fl">有整体规划的课外活动</h4>
+                </div>
+                <p>数量足够，级别递进，活动之间相互贯通，目标清晰，有主线；凸显个人特色，有重点，有持续性，与学习安排协调一致。</p>
+                <a onclick="go()">查看并咨询准备方案&gt;&gt;</a>
+            </div>
+            <div class="box fr">
+                <div class="t clearfix">
+                    <img src="./static/home/img/page/yingxiaolxxx/mxicon2.png" class="fl" alt="">
+                    <h4 class="fl">有推荐信</h4>
+                </div>
+                <p>有靠谱的机构推荐，将会大大提升录取成功率，可联系导师免费获取。</p>
+                <a onclick="go()">咨询并领取推荐信&gt;&gt;</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 成功录取案例分析 -->
+    <div class="anli">
+        <div class="gWidth1170">
+            <h3 class="title">成功录取案例分析</h3>
+            <div class="content clearfix">
+                <div class="box fl">
+                    <h3>W同学</h3>
+                    <p><b>本科：</b>同济大学<br><b>成绩：</b>GPA:3.5/4.0,TOEFL:102,GRE:318<br><b>录取：</b>罗德岛设计学院</p>
+                    <h4>关于申请：</h4>
+                    <p>W同学是学校手绘社团的社长，全年带领社团组织各类丰富的校园活动;每年都会参加学校的艺术节，几乎把所有的现场绘画、徽章、海报设计、泥塑奖项收入囊中;在学校发起、创办一系列的中国传统艺术课堂，如剪纸、风筝、京剧脸谱画、葫芦画等等;也曾在学校举办过个人画展、帮助学校设计地下车库的壁画……
+                    </p>
+                    <div class="a">
+                        <a onclick="go()">向TA咨询</a>
+                        <a onclick="go()" class="a1">查看详情</a>
+                    </div>
+                </div>
+                <div class="box fl">
+                    <h3>L同学</h3>
+                    <p><b>本科：</b>宾州州立大学<br><b>成绩：</b>3.74<br><b>录取：</b>哥伦比亚大学</p>
+                    <h4>关于申请：</h4>
+                    <p>L同学算是一个很特别的案例，她没有参加任何标化考试、本科期间参加的项目实习也比较少。仅凭本科GPA与本科专业教授的三封推荐信，拿到了NYU和哥大
+                        sps学院的同时录取。在文书上，老师努力帮助L同学寻找自己的亮点与过人之处，让招生官感受到她与学院理念的契合。最终她选择了哥伦比亚大学……
+                    </p>
+                    <div class="a">
+                        <a onclick="go()">向TA咨询</a>
+                        <a onclick="go()" class="a1">查看详情</a>
+                    </div>
+                </div>
+                <div class="box fl">
+                    <h3>Z同学</h3>
+                    <p><b>本科：</b>对外经贸大学<br><b>成绩：</b>GPA 3.4/4.0,TOEFL103,GRE 321+3.5<br><b>录取：</b>约翰霍普金斯大学</p>
+                    <h4>关于申请：</h4>
+                    <p>Z同学在大三上学期的寒假结束了才决定好出国，之前半年有这个想法，但是一直在比较中介机构，了解申请条件，还没有决定和开始准备。然后寒假末的时候，通过同学介绍来到了彬彬教育，他们为我做了详细的分析和规划，GPA当时只有3.3,前50的金融专业申请是没有太大问题，但是要进前30，下学期的……
+                    </p>
+                    <div class="a">
+                        <a onclick="go()">向TA咨询</a>
+                        <a onclick="go()" class="a1">查看详情</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a onclick="go()">咨询并获取详细录取攻略&gt;&gt;</a>
+    </div>
+
+    <!-- 上名校 找彬彬 -->
+    <div class="binbin gWidth1170">
+        <h3 class="title">上名校 找彬彬</h3>
+        <p>彬彬教育，极致服务 致力于让每一个孩子牵手美国名校</p>
+        <div class="numbox clearfix">
+            <div class="box fl">
+                <h4><span id="num1">100</span>%</h4>
+                <p>常青藤院校覆盖</p>
+            </div>
+            <div class="box fl">
+                <h4><span id="num2">100</span>%</h4>
+                <p>学生获得心仪offer</p>
+            </div>
+            <div class="box fl">
+                <h4><span id="num3">53</span>%</h4>
+                <p>TOP10名校</p>
+            </div>
+            <div class="box fl">
+                <h4><span id="num4">9.7</span>亿</h4>
+                <p>奖学金累计（RMB）</p>
+            </div>
+        </div>
+    </div>
+    <!-- 彬彬教育致力让每一个学生牵手世界名校 -->
+    <div id="mydiv">
+        <div class="box gWidth1170 clearfix">
+            <!-- content -->
+            <div class="content gWidth1170">
+                <div class="fl">
+                    <ul>
+                        <li class="li1 clearfix">
+                            <h3>全程咨询导师</h3>
+                            <p>全程申请规划、申请时间进度把控%</p>
+                            <a onclick="go()">马上咨询全程咨询导师&gt;&gt;</a>
+                        </li>
+                        <li class="li2 clearfix">
+                            <h3>海外明星导师</h3>
+                            <p>职业规划咨询、选校选专业咨询建议、文书素材<br />把关、模拟面试</p>
+                            <a onclick="go()">马上咨询全程咨询导师&gt;&gt;</a>
+                        </li>
+                        <li class="li3 clearfix">
+                            <h3>全能主导申请师</h3>
+                            <p>全程申请规划、申请时间进度把控、选校定位、<br />推荐人筛选、简历咨询、文书咨询、面试辅导</p>
+                            <a onclick="go()">马上咨询全程咨询导师&gt;&gt;</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="dq">
+                    <div>
+                    </div>
+                </div>
+                <div class="fr">
+                    <ul>
+                        <li class="li1 clearfix">
+                            <h3>资深流程导师</h3>
+                            <p class="fr">网申填写辅导、成绩认证辅导、语言成绩寄送<br />辅导、申请材料准备辅导</p>
+                            <a onclick="go()">马上咨询全程咨询导师&gt;&gt;</a>
+                        </li>
+                        <li class="li2 clearfix">
+                            <h3>名校外籍导师</h3>
+                            <p class="fr" style="width: 330px;">文书母语润色、词汇句法优化、素材结构建议</p>
+                            <a onclick="go()">马上咨询全程咨询导师&gt;&gt;</a>
+                        </li>
+                        <li class="li3 clearfix">
+                            <h3>专家督导导师</h3>
+                            <p class="fr">跟踪学生申请进度、定期跟踪学生的申请体验、审核<br />学生申请方案</p>
+                            <a onclick="go()">马上咨询全程咨询导师&gt;&gt;</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 关于彬彬教育 -->
+    <div class="guanyu gWidth1170">
+        <h3 class="title">关于彬彬教育</h3>
+        <p>彬彬国际教育咨询(北京)有限公司简称彬彬教育，于2006年在洛杉矶成立，提供美国留学申请、本科及研究生出国考试辅导，背景提升，出国语言与考试辅导、海外监管、寄宿家庭安置、职业规划咨询服务。中国总部位于北京，美国总部位于加州洛杉矶。
+        </p>
+        <p>公司服务范围涉及全国，并在美国设有16家境外服务中心，与上千所美国院校建立了长期稳定的合作关系。每年帮助数百位学子圆梦哈佛大学、麻省理工学院、斯坦福大学、耶鲁大学等世界名校。</p>
+        <p>彬彬教育服务模式为“6位1体”导师服务，提升准留学生们的TOEFL、TOEFL Junior、IELTS、ITEP-slate
+            等语言考试成绩和SSAT、SAT、ACT、GRE、GMAT等标化考试成绩，助力准留学生顺利获得心仪学校的offer。</p>
+    </div>
+
+    <!-- 文章 -->
+    <div class="wenzhang gWidth1170 clearfix">
+        <div class="fl">
+            <h3>出国留学攻略</h3>
+            <ul>
+                <li class="clearfix" onclick="go()">
+                    <span class="fl">关于美国大学面试的相关建议</span>
+                    <a onclick="go()" class="fr">查看并咨询&gt;&gt;</a>
+                </li>
+                <li class="clearfix" onclick="go()">
+                    <span class="fl">美国留学申请需要具备的5个条件</span>
+                    <a onclick="go()" class="fr">查看并咨询&gt;&gt;</a>
+                </li>
+                <li class="clearfix" onclick="go()">
+                    <span class="fl">冲击申请季之暑期规划</span>
+                    <a onclick="go()" class="fr">查看并咨询&gt;&gt;</a>
+                </li>
+                <li class="clearfix" onclick="go()">
+                    <span class="fl">冲击申请季之美国留学备考建议</span>
+                    <a onclick="go()" class="fr">查看并咨询&gt;&gt;</a>
+                </li>
+                <li class="clearfix" onclick="go()">
+                    <span class="fl">这4所美国大学也接受高考成绩了！</span>
+                    <a onclick="go()" class="fr">查看并咨询&gt;&gt;</a>
+                </li>
+                <li class="clearfix" onclick="go()">
+                    <span class="fl">G20中美谈判 | 特朗普：欢迎中国留学生</span>
+                    <a onclick="go()" class="fr">查看并咨询&gt;&gt;</a>
+                </li>
+                <li class="clearfix" onclick="go()">
+                    <span class="fl">适应美国大学的学习生活，你需要培养这三种能力</span>
+                    <a onclick="go()" class="fr">查看并咨询&gt;&gt;</a>
+                </li>
+                <li class="clearfix" onclick="go()">
+                    <span class="fl">美国留学之《纽约时报》解析美国大学录取的精英标准</span>
+                    <a onclick="go()" class="fr">查看并咨询&gt;&gt;</a>
+                </li>
+                <li class="clearfix" onclick="go()">
+                    <span class="fl">高考生必看：美国本科双录取</span>
+                    <a onclick="go()" class="fr">查看并咨询&gt;&gt;</a>
+                </li>
+                <li class="clearfix" onclick="go()">
+                    <span class="fl">美国留学面试常见的7个问题及解答思路</span>
+                    <a onclick="go()" class="fr">查看并咨询&gt;&gt;</a>
+                </li>
+            </ul>
+        </div>
+        <div class="fl">
+            <h3>留学精选问答</h3>
+            <ul>
+                <li class="clearfix" onclick="go()">
+                    <span class="fl">春季入学和秋季入学有什么不一样?</span>
+                    <a onclick="go()" class="fr">查看并咨询&gt;&gt;</a>
+                </li>
+                <li class="clearfix" onclick="go()">
+                    <span class="fl">想去美国留学，但GPA不够高怎么办?</span>
+                    <a onclick="go()" class="fr">查看并咨询&gt;&gt;</a>
+                </li>
+                <li class="clearfix" onclick="go()">
+                    <span class="fl">如何充分利用申请季前的暑假？</span>
+                    <a onclick="go()" class="fr">查看并咨询&gt;&gt;</a>
+                </li>
+                <li class="clearfix" onclick="go()">
+                    <span class="fl">高一新生如何规划留学？</span>
+                    <a onclick="go()" class="fr">查看并咨询&gt;&gt;</a>
+                </li>
+                <li class="clearfix" onclick="go()">
+                    <span class="fl">申请美国留学时，公益活动该怎么做？</span>
+                    <a onclick="go()" class="fr">查看并咨询&gt;&gt;</a>
+                </li>
+                <li class="clearfix" onclick="go()">
+                    <span class="fl">去美国留学就业机会最多的城市、职位有哪些？</span>
+                    <a onclick="go()" class="fr">查看并咨询&gt;&gt;</a>
+                </li>
+                <li class="clearfix" onclick="go()">
+                    <span class="fl">申请美国高中，到底什么时候最好？</span>
+                    <a onclick="go()" class="fr">查看并咨询&gt;&gt;</a>
+                </li>
+                <li class="clearfix" onclick="go()">
+                    <span class="fl">申请美国高中丨推荐信怎么写？需要注意什么？</span>
+                    <a onclick="go()" class="fr">查看并咨询&gt;&gt;</a>
+                </li>
+                <li class="clearfix" onclick="go()">
+                    <span class="fl">美国什么专业最挣钱？</span>
+                    <a onclick="go()" class="fr">查看并咨询&gt;&gt;</a>
+                </li>
+                <li class="clearfix" onclick="go()">
+                    <span class="fl">CV和Resume有什么区别？</span>
+                    <a onclick="go()" class="fr">查看并咨询&gt;&gt;</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 底部 -->
+    <script type="text/javascript" src="./static/home/js/public/jquery.lazyload.js"></script>
+    <!-- 底部 -->
+    <footer class="bottomD">
+        <div class="bottomTop">
+            <div class="gWidth1170 clearfix">
+                <!-- logo 地址 联系方式 -->
+                <div class="fl logo">
+                    <a href="/"><img src="./static/home/img/home/logodi.png" alt="美国留学_专业的美国留学服务中介机构_彬彬教育"
+                            title="美国留学_专业的美国留学服务中介机构_彬彬教育"></a>
+                    <div class="clearfix">
+                        <img src="./static/home/img/home/dingwei.png" class="fl" alt="">
+                        <p class="fl">北京市朝阳区呼家楼京广中心商务楼10层（呼家楼地铁D口向南50米）</p>
+                    </div>
+                    <p class="fl ph" style="cursor:pointer;"><img src="./static/home/img/home/dianhua.png" class="fl"
+                            alt="">010-65978817</p>
+                </div>
+                <!-- 底部导航 -->
+                <div class="fl botNav">
+                    <div class="nav clearfix">
+                        <span class="fl">特色服务</span>
+                        <p class="fr">+</p>
+                        <div class="hidden">
+                            <p><a href="/tutor/special/" target="_blank">六位一体服务模式</a></p>
+                            <p><a href="/page/polymerization.html" target="_blank">软性背景提升</a></p>
+                            <p><a href="/page/overseashome.html" target="_blank">海外监管服务</a></p>
+                            <p><a href="/fmfml/0-0-1.html" target="_blank">寄宿家庭精选</a></p>
+                            <p><a href="/page/goclass.html" target="_blank">出国衔接课程</a></p>
+                            <!-- <p><a href="">海外无忧管家</a></p>
+                             <p><a href="">出国衔接课程</a></p>
+                             <p><a href="">留学活动讲座</a></p> -->
+                        </div>
+                    </div>
+                    <div class="nav clearfix">
+                        <span class="fl">美国留学</span>
+                        <p class="fr">+</p>
+                        <div class="hidden">
+                            <p><a href="/middle" target="_blank">中学留学</a></p>
+                            <p><a href="/college" target="_blank">本科留学</a></p>
+                            <p><a href="/graduate" target="_blank">研究生留学</a></p>
+                            <p><a href="/activity/0-0/" target="_blank">活动讲座</a></p>
+                            <p><a href="/page/testprep.html" target="_blank">留学考试</a></p>
+                            <p><a href="/article/0-204/" target="_blank">成功故事</a></p>
+                            <!-- <p><a href="">留学活动讲座</a></p> -->
+                        </div>
+                    </div>
+                    <div class="nav clearfix">
+                        <span class="fl">留学资讯</span>
+                        <p class="fr">+</p>
+                        <div class="hidden">
+                            <p><a href="/article/0-101/" target="_blank">留学费用</a></p>
+                            <p><a href="/article/0-203/" target="_blank">院校排名</a></p>
+                            <p><a href="/article/0-200/" target="_blank">专业解析</a></p>
+                            <p><a href="/article/0-66/" target="_blank">考试资讯</a></p>
+                            <p><a href="/article/0-64/" target="_blank">行前指南</a></p>
+                            <p><a href="/article/0-63/" target="_blank">海外生活</a></p>
+                            <!-- <p><a href="">留学活动讲座</a></p> -->
+                        </div>
+                    </div>
+                    <a href="/index/ws" target="_blank" class="nav clearfix">
+                        <span class="fl">关于彬彬</span>
+                        <!-- <p class="fr">+</p> -->
+                        <div class="hidden">
+                            <!-- <p><a href="/index/ws" target="_blank">公司简介</a></p>
+                             <p><a href="/tutor/special" target="_blank">导师团队</a></p> -->
+                            <!-- <p><a href="">院校插班营</a></p>
+                             <p><a href="">留学背景提升</a></p>
+                             <p><a href="">海外无忧管家</a></p>
+                             <p><a href="">出国衔接课程</a></p>
+                             <p><a href="">留学活动讲座</a></p> -->
+                        </div>
+                    </a>
+                </div>
+                <div class="fr ewm">
+                    <img src="./static/home/img/rwm.jpg" alt="">
+                    <p>扫一扫<br />留学课程免费听</p>
+                </div>
+                <div class="fr ewm rwm">
+                    <img src="./static/home/img/home/845167097512794061.png" alt="">
+                    <p>扫一扫<br />留学问题早知道</p>
+                </div>
+            </div>
+        </div>
+        <div class="bottomBot gWidth1170">
+            <div class="youqing">
+
+            </div>
+            <div class="bot">
+                <p>Beliwin Company @ 2016 . Privacy Polocy 京ICP备16012183号</p>
+                <p>彬彬国际教育咨询（北京）有限公司版权所有 beliwin.com 彬彬留学京公网安备 京公网安备 11010502034288号</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="leftTc">
+        <p>免费<br />通话</p>
+        <img src="./static/home/img/phone.png" alt="">
+    </div>
+    <div class="hid">
+        <h2>留学问题轻松问</h2>
+        <p>400-900-9770</p>
+        <input type="text" class="phone" placeholder="请输入电话号码" />
+        <button class="button">点击免费通话</button>
+        <img src="./static/home/img/leftX.png" alt="">
+        <div class="bbqwer">
+            <span class="span1">手机请直接输入：如1860086xxxx</span>
+            <p>输入您的电话号码，点击通话，稍后您将接到我们的电话，该通话对您<b>完全免费</b>，请放心接听！</p>
+            <em></em>
+            <b>╳</b>
+        </div>
+    </div>
+
+    <div class="hid2">
+        <h2>留学问题轻松问</h2>
+        <p>400-900-9770</p>
+        <input type="text" class="phone" placeholder="请输入电话号码" />
+        <button class="button">立即给您回电</button>
+        <img src="./static/home/img/leftX.png" alt="">
+        <div class="bbqwer">
+            <span class="span1">手机请直接输入：如1860086xxxx</span>
+            <p>输入您的电话号码，点击通话，稍后您将接到我们的电话，该通话对您<b>完全免费</b>，请放心接听！</p>
+            <em></em>
+            <b>╳</b>
+        </div>
+    </div>
+
+    <!-- 导航++底部  CSS++JS -->
+    <link rel="stylesheet" href="./static/home/css/index/public.css" />
+    <script type="text/javascript" src="./static/home/js/index/yingxiaopublic.js"></script>
+    <!-- 粒子链接 -->
+    <script type="text/javascript" src="./static/home/js/public/canvas-particle.js"></script>
+    <!-- 数字滚动插件 -->
+    <script type="text/javascript" src="./static/home/js/public/countUp.min.js"></script>
+
+    <!-- <script language="javascript" src="https://dvt.zoosnet.net/JS/LsJS.aspx?siteid=DVT56740265&lng=cn"></script> -->
+    <script type="text/javascript" src="./static/home/js/page/count.js"></script>
+
+    <!-- 数字滚动插件 -->
+    <script type="text/javascript" src="./static/home/js/public/countUp.min.js"></script>
+    <script src="./static/home/js/public/http.js"></script>
+    <!-- <script src="./static/home/js/public/page_json/yingxiaogzsq_data.js"></script> -->
+    <script src="./static/home/js/public/tab.js"></script>
+    <script src="./static/home/js/page/yingxiaolxxx/index.js"></script>
+
+    <script src="./static/home/js/common/common_yingxiao.js"></script>
+    <link rel="stylesheet" href="./static/home/css/common/common_yingxiao.css">
+
+    <script src="./static/home/js/common/common_yingxiao2.js"></script>
+    <link rel="stylesheet" href="./static/home/css/common/common_yingxiao2.css">
+
+    <link rel="stylesheet" href="./static/home/css/common/common_yingxiaobuttom.css">
+
+    <link rel="stylesheet" href="./static/home/css/common/common_fForm.css">
+    <script src="./static/home/js/common/common_fForm.js"></script>
+</body>
+
+</html>

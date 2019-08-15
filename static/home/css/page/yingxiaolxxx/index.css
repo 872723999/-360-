@@ -1,0 +1,1008 @@
+/* banner */
+.banner {
+    width: 100%;
+    height: 473px;
+    background: url(../../../img/page/yingxiaolxxx/banner.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.banner>.a {
+    text-align: center;
+    position: absolute;
+    bottom: 104px;
+    width: 100%;
+}
+
+.banner a {
+    width: 232px;
+    height: 54px;
+    text-align: center;
+    line-height: 54px;
+    font-size: 24px;
+    color: #ffffff;
+    background-color: #1059F9;
+    border-radius: 50px;
+    display: inline-block;
+    margin-right: 52px;
+}
+
+.banner a:last-child {
+    margin-right: 0;
+}
+
+.banner a:hover {
+    background-color: #FF7062;
+}
+
+/* fNav */
+.fNav {
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    background-color: #FF7062;
+}
+
+.fNav>div {
+    font-size: 0;
+}
+
+.fNav a {
+    font-size: 18px;
+    color: #ffffff;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.fNav a::after {
+    content: "|";
+    font-weight: normal;
+    display: inline-block;
+    padding: 0 25px;
+}
+
+.fNav a:last-child::after {
+    display: none;
+}
+
+.fNav a:hover {
+    text-decoration: underline;
+}
+
+/* 推荐list */
+.tjList {
+    width: 100%;
+    height: 243px;
+    background-color: #F5F5F5;
+    margin-bottom: 48px;
+}
+
+.tjList .listBox {
+    width: 33%;
+    height: 169px;
+    box-sizing: border-box;
+    border-right: 2px dashed #000000;
+    padding-right: 16px;
+    padding-left: 29px;
+    margin: 43px 0 31px;
+    font-size: 0;
+}
+
+.tjList .listBox h3 {
+    font-size: 18px;
+    padding-bottom: 14px;
+}
+
+.tjList .listBox a {
+    font-size: 14px;
+    display: inline-block;
+    margin-bottom: 12px;
+    margin-right: 24px;
+}
+
+.tjList .listBox a.hot::after {
+    content: '';
+    width: 22px;
+    height: 14px;
+    background: url(../../../img/page/yingxiaolxxx/remen.png) no-repeat center center;
+    background-size: cover;
+    display: inline-block;
+    margin-left: 2px;
+    vertical-align: middle;
+    margin-bottom: 2px;
+}
+
+.tjList .listBox a:hover {
+    color: #FF7062;
+}
+
+.tjList .listBox:first-child {
+    padding-left: 0;
+}
+
+.tjList .listBox:last-child {
+    border-right: none;
+}
+
+/* 横幅 */
+.hengfu {
+    height: 111px;
+    background: url(../../../img/page/yingxiaolxxx/guanggaowei.jpg) no-repeat center center;
+    background-size: cover;
+    text-align: center;
+    line-height: 111px;
+    font-size: 36px;
+    font-weight: bold;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+/* title */
+.title {
+    font-size: 40px;
+    font-weight: normal;
+    text-align: center;
+    padding: 70px 0 36px;
+}
+
+/* 2019年美国综合大学排名 */
+.table {
+    padding-bottom: 70px;
+}
+
+.table .tableTab {
+    font-size: 0;
+    text-align: center;
+    margin-bottom: 22px;
+}
+
+.table .tableTab span {
+    font-size: 22px;
+    font-weight: bold;
+    width: 170px;
+    height: 46px;
+    border: 1px solid #FF7062;
+    border-radius: 30px;
+    text-align: center;
+    line-height: 46px;
+    color: #FF7062;
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 36px;
+}
+
+.table .tableTab span:last-child {
+    margin-right: 0
+}
+
+.table .tableTab span.active {
+    background-color: #FF7062;
+    color: #ffffff;
+}
+
+.table .tableBox .box {
+    display: none;
+}
+
+.table1,
+.table2 {
+    width: 100%;
+    height: 52px;
+    line-height: 52px;
+    background-color: #ff9a90;
+    text-align: center;
+    color: #ffffff;
+    border-collapse: collapse;
+    border-radius: 5px 5px 0 0;
+    box-sizing: border-box;
+}
+
+.table .box2 {
+    height: 440px;
+    border-bottom: 1px solid #FF9A90;
+    overflow: auto;
+}
+
+/*滚动条样式*/
+.table .box2::-webkit-scrollbar {
+    /*滚动条整体样式*/
+    width: 14px;
+    /*高宽分别对应横竖滚动条的尺寸*/
+    height: 14px;
+}
+
+.table .box2::-webkit-scrollbar-thumb {
+    /*滚动条里面小方块*/
+    width: 14px;
+    background-color: #F6B2AB;
+}
+
+.table .box2::-webkit-scrollbar-track {
+    /*滚动条里面轨道*/
+    border-radius: 0;
+    background-color: #ffffff;
+    border: 1px solid #FF9A90;
+    box-sizing: border-box;
+    border-left: none;
+    border-bottom: none;
+}
+
+.table2 {
+    background-color: #ffffff;
+    border-radius: 0;
+    color: #333333;
+    border: 1px solid #ff9a90;
+    border-bottom: none;
+}
+
+.table2 td {
+    border: 1px solid #ff9a90;
+    border-bottom: none;
+    font-size: 14px;
+}
+
+.table2 td:nth-child(1) {
+    width: 116px;
+}
+
+.table2 td:nth-child(2) {
+    width: 232px;
+}
+
+.table2 td:nth-child(3) {
+    width: 148px;
+}
+
+.table2 td:nth-child(4) {
+    width: 184px;
+}
+
+.table2 td:nth-child(5) {
+    width: 165px;
+}
+
+.table2 td:nth-child(6) {
+    width: 165px;
+}
+
+.table2 td:nth-child(7) {
+    width: 166px;
+}
+
+.table1 td:nth-child(1) {
+    width: 113px;
+}
+
+.table1 td:nth-child(2) {
+    width: 227px;
+}
+
+.table1 td:nth-child(3) {
+    width: 145px;
+}
+
+.table1 td:nth-child(4) {
+    width: 182px;
+}
+
+.table1 td:nth-child(5) {
+    width: 162px;
+}
+
+.table1 td:nth-child(6) {
+    width: 162px;
+}
+
+.table2 td span:hover {
+    color: #ff9a90;
+    cursor: pointer;
+}
+
+.table2 td a {
+    width: 88px;
+    height: 28px;
+    text-align: center;
+    line-height: 28px;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #7298EC;
+    margin: 0 auto;
+}
+
+.table2 td a:hover {
+    background-color: #ff9a90;
+}
+
+.blue .tableTab span {
+    border-color: #7298EC;
+    color: #7298EC;
+}
+
+.blue .tableTab span.active,
+.blue .table1,
+.blue .table2 td a:hover {
+    background-color: #7298EC;
+}
+
+.blue .box2::-webkit-scrollbar-thumb {
+    background-color: #82A5EF;
+}
+
+.blue .table2 td,
+.blue .box2,
+.blue .box2::-webkit-scrollbar-track {
+    border-color: #7298EC;
+}
+
+.blue .table2 td a {
+    background-color: #ff9a90;
+}
+
+.blue .table2 td span:hover {
+    color: #7298EC;
+}
+
+.wenli,
+.zoudu {
+    width: 100%;
+    background: url(../../../img/page/yingxiaolxxx/beijing1.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.zoudu {
+    background-image: url(../../../img/page/yingxiaolxxx/beijing2.jpg);
+}
+
+/* 上名校 如何提高申请成功率 */
+.chenggonglv .content .box {
+    width: 374px;
+    margin-right: 23px;
+}
+
+.chenggonglv .content .box3 {
+    margin-right: 0;
+}
+
+.chenggonglv .content .box .img {
+    width: 100%;
+    height: 92px;
+    background: url(../../../img/page/yingxiaolxxx/mingxiao1.jpg) no-repeat center center;
+    background-size: cover;
+    font-size: 32px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 92px;
+}
+
+.chenggonglv .content .box2 .img {
+    background-image: url(../../../img/page/yingxiaolxxx/mingxiao2.jpg);
+}
+
+.chenggonglv .content .box3 .img {
+    background-image: url(../../../img/page/yingxiaolxxx/mingxiao3.jpg);
+}
+
+.chenggonglv .content .box .b {
+    width: 100%;
+    height: 192px;
+    border: 1px solid #E1E1E1;
+    border-top: none;
+    box-sizing: border-box;
+}
+
+.chenggonglv .content .box .b p {
+    text-align: center;
+    font-size: 20px;
+    padding: 34px 0 0;
+}
+
+.chenggonglv .content .box .b a {
+    width: 268px;
+    height: 44px;
+    text-align: center;
+    line-height: 44px;
+    font-size: 20px;
+    color: #ffffff;
+    border-radius: 3px;
+    background-color: #FF7062;
+    position: absolute;
+    left: 50%;
+    margin-left: -134px;
+    bottom: 37px;
+}
+
+.chenggonglv .content .box .b a:hover {
+    opacity: 0.8;
+}
+
+/* 名校喜欢什么样的学生 */
+.likeStu {
+    padding-bottom: 72px;
+}
+
+.likeStu .content .box {
+    width: 562px;
+    height: 323px;
+    border: 1px solid #DBD7D7;
+    border-bottom: 4px solid #7298EC;
+    border-radius: 0 0 5px 5px;
+}
+
+.likeStu .content .box.fr {
+    border-bottom-color: #FF7062;
+}
+
+.likeStu .content .box .t {
+    padding: 31px 47px;
+}
+
+.likeStu .content .box .t img.fl {
+    width: 64px;
+    height: 64px;
+    margin-right: 19px;
+}
+
+.likeStu .content .box .t h4.fl {
+    font-size: 26px;
+    line-height: 64px;
+}
+
+.likeStu .content .box p {
+    padding: 0 56px;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.likeStu .content .box a {
+    width: 264px;
+    height: 44px;
+    text-align: center;
+    line-height: 44px;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #FF7062;
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    margin-left: -132px;
+}
+
+.likeStu .content .box a:hover {
+    opacity: 0.8;
+}
+
+/* 成功录取案例分析 */
+.anli {
+    width: 100%;
+    height: 790px;
+    background: url(../../../img/page/yingxiaolxxx/beijing2.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.anli .content .box {
+    width: 368px;
+    height: 472px;
+    border: 1px solid #F6C2C2;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    margin-right: 30px;
+}
+
+.anli .content .box:last-child {
+    margin-right: 0;
+}
+
+.anli .content .box h3 {
+    text-align: center;
+    font-size: 24px;
+    color: #FF7062;
+    padding: 35px 0 20px;
+}
+
+.anli .content .box p {
+    font-size: 14px;
+    padding: 0 35px;
+    line-height: 24px;
+}
+
+.anli .content .box h4 {
+    font-size: 18px;
+    padding: 15px 35px 9px;
+}
+
+.anli .content .box div.a {
+    font-size: 0;
+    text-align: center;
+    margin-top: 27px;
+}
+
+.anli .content .box div.a a {
+    width: 108px;
+    height: 32px;
+    text-align: center;
+    line-height: 32px;
+    border: 1px solid #FF7062;
+    border-radius: 3px;
+    box-sizing: border-box;
+    font-size: 14px;
+    display: inline-block;
+    background-color: #ff7062;
+    color: #ffffff;
+    margin-right: 40px;
+}
+
+.anli .content .box div.a a.a1:hover {
+    background-color: #ff7062;
+    color: #ffffff;
+}
+
+.anli .content .box div.a a.a1 {
+    margin-right: 0;
+    background-color: transparent;
+    color: #ff7062;
+}
+
+.anli .content .box div.a a:hover {
+    opacity: 0.8;
+}
+
+.anli>a {
+    width: 372px;
+    height: 48px;
+    text-align: center;
+    line-height: 48px;
+    background-color: #FF7062;
+    border-radius: 3px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.23);
+    margin: 46px auto 0;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.anli>a:hover {
+    opacity: 0.8;
+}
+
+/* 上名校 找彬彬 */
+.binbin h3.title {
+    padding-bottom: 6px;
+}
+
+.binbin>p {
+    text-align: center;
+    font-size: 20px;
+    padding-bottom: 46px;
+}
+
+.binbin .numbox .box {
+    width: 25%;
+    text-align: center;
+}
+
+.binbin .numbox .box h4 {
+    font-size: 48px;
+}
+
+.binbin .numbox .box h4::after {
+    content: '';
+    width: 24px;
+    height: 2px;
+    display: block;
+    background-color: #ff7062;
+    margin: 6px auto 13px;
+}
+
+.binbin .numbox .box p {
+    font-size: 18px;
+}
+
+/* 彬彬导师团队 */
+.daoshi_team {
+    width: 100%;
+    overflow: hidden;
+    background-color: #F8F8F8;
+    padding-bottom: 60px;
+    margin-top: 56px;
+}
+
+.daoshi_team h3.title {
+    padding-top: 79px;
+}
+
+.daoshi_team .count>div.t {
+    font-size: 16px;
+    margin-bottom: 28px;
+    text-align: center;
+}
+
+.daoshi_team .count>div.t .tbox {
+    display: inline-block;
+}
+
+.daoshi_team .count>div.t span {
+    padding: 0 25px;
+    color: #707070;
+}
+
+.daoshi_team .count>div.t a {
+    color: #232426;
+    padding-bottom: 10px;
+}
+
+.daoshi_team .count>div.t a:hover {
+    color: #FF7062;
+}
+
+.daoshi_team .count>div.t a.active {
+    color: #FF7062;
+    border-bottom: 2px solid #FF7062;
+}
+
+.daoshi_team .count>div.b .bBox {
+    display: none;
+}
+
+.daoshi_team .count>div.b .leftb {
+    margin-top: 50px;
+}
+
+.daoshi_team .count>div.b .leftb h3 {
+    font-size: 30px;
+    color: #333333;
+    font-weight: 400;
+    margin-bottom: 6px;
+}
+
+.daoshi_team .count>div.b .leftb p {
+    font-size: 24px;
+    color: #333333;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+    margin-bottom: 23px;
+}
+
+.daoshi_team .count>div.b .leftb span {
+    width: 72px;
+    height: 4px;
+    background-color: #454545;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+    display: block;
+    margin-bottom: 32px;
+}
+
+.daoshi_team .count>div.b .leftb em {
+    width: 367px;
+    display: block;
+    font-size: 15px;
+    color: #333333;
+    line-height: 24px;
+    margin-bottom: 50px;
+}
+
+.daoshi_team .count>div.b .leftb div.bBtn a {
+    width: 154px;
+    height: 34px;
+    border: 1px solid #333333;
+    line-height: 34px;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 5px;
+    margin-right: 28px;
+}
+
+.daoshi_team .count>div.b .leftb div.bBtn a:hover {
+    color: #fff;
+    border-color: #FF7062;
+    background-color: #FF7062;
+}
+
+.daoshi_team .count>div.b .rightb {
+    width: 716px;
+}
+
+.daoshi_team .count>div.b .rightb>div.fl {
+    width: 220px;
+    height: 232px;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    margin-left: 18px;
+    margin-bottom: 20px;
+}
+
+.daoshi_team .count>div.b .rightb>div.fl img {
+    width: 100%;
+    height: 100%;
+}
+
+.daoshi_team .count>div.b .rightb>div.fl .hidden {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: none;
+}
+
+.daoshi_team .count>div.b .rightb>div.fl .hidden h3 {
+    font-size: 22px;
+    color: #fff;
+    font-weight: 400;
+    margin-top: 31px;
+    margin-bottom: 15px;
+}
+
+.daoshi_team .count>div.b .rightb>div.fl .hidden span {
+    width: 40px;
+    height: 1px;
+    background-color: #fff;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 21px;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+}
+
+.daoshi_team .count>div.b .rightb>div.fl .hidden p {
+    color: #fff;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 22px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.daoshi_team .count>div.b .rightb>div.fl .hidden a {
+    font-size: 14px;
+    color: #fff;
+    width: 98px;
+    height: 28px;
+    border: 1px solid #fff;
+    text-align: center;
+    line-height: 28px;
+    border-radius: 5px;
+    display: block;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    margin-left: -49px;
+}
+
+.daoshi_team .count>div.b .rightb>div.fl .hidden a:hover {
+    color: #fff;
+    border-color: #FF7062;
+    background-color: #FF7062;
+}
+
+.daoshi_team .count>div.b .rightb>div.fl .hiddenTitle {
+    width: 100%;
+    height: 52px;
+    background-color: rgba(0, 0, 0, 0.46);
+    text-align: center;
+    line-height: 52px;
+    font-size: 22px;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+/* 关于彬彬教育 */
+.guanyu p {
+    font-size: 16px;
+    line-height: 32px;
+    margin-bottom: 30px;
+}
+
+/* 文章 */
+.wenzhang {
+    padding-top: 70px;
+}
+
+.wenzhang>div.fl {
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.wenzhang>div.fl:last-child {
+    padding-left: 50px;
+}
+
+.wenzhang>div.fl:last-child ul {
+    border: none;
+}
+
+.wenzhang h3 {
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+.wenzhang ul {
+    box-sizing: border-box;
+    border-right: 1px solid #707070;
+    font-size: 14px;
+    width: 100%;
+    padding-right: 56px;
+}
+
+.wenzhang ul li {
+    margin-bottom: 10px;
+}
+
+.wenzhang ul span:hover {
+    color: #ff7062;
+    cursor: pointer;
+}
+
+.wenzhang ul a {
+    color: #FF7062;
+}
+
+.wenzhang ul a:hover {
+    text-decoration: underline;
+}
+
+.wenzhang {
+    padding-bottom: 70px;
+}
+
+#mydiv {
+    width: 100%;
+    position: relative;
+    margin-top: 60px;
+}
+
+#mydiv .title {
+    padding-top: 118px;
+    margin-bottom: 60px;
+}
+
+#mydiv canvas {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+#mydiv .box {
+    height: 100%;
+}
+
+#mydiv .box .content {
+    position: relative;
+}
+
+#mydiv .box .content .dq {
+    width: 375px;
+    height: 364px;
+    background: url(../../../img/13223222222.png) no-repeat center center;
+    background-size: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -27.5px;
+    margin-left: -182px;
+}
+
+#mydiv .box .content .dq>div {
+    width: 193px;
+    height: 193px;
+    border-radius: 50%;
+    background: url(../../../img/a6e310318cc5a075e8e4a0a459119ad.png) no-repeat left center;
+    background-size: cover;
+    background-color: #281E1C;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -96.5px;
+    margin-left: -96.5px;
+    overflow: hidden;
+    transition: all 3s;
+}
+
+#mydiv .box .content .dq>div img {
+    height: 193px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 7;
+}
+
+#mydiv .box .content .dq>div h3 {
+    font-size: 26px;
+    display: table;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 9;
+    color: #fff;
+    /* margin-top: -56.5px; */
+}
+
+#mydiv .box .content .dq>div h3 p {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
+#mydiv .box .content>div.fl li.li1 {
+    margin-bottom: 29px;
+}
+
+#mydiv .box .content>div.fl li.li2 {
+    margin-bottom: 7px;
+}
+
+#mydiv .box .content>div.fl li.li2 p {
+    width: 336px;
+}
+
+#mydiv .box .content>div.fl li.li3 p {
+    width: 432px;
+}
+
+#mydiv .box .content>div.fl h3,
+#mydiv .box .content>div.fr h3 {
+    font-size: 18px;
+    color: #333333;
+    margin-bottom: 7px;
+}
+
+#mydiv .box .content>div.fl p,
+#mydiv .box .content>div.fr p {
+    font-size: 14px;
+    color: #0F0F0F;
+}
+
+#mydiv .box .content>div.fr {
+    text-align: right;
+}
+
+#mydiv .box .content>div.fr li.li1 p {
+    width: 320px;
+}
+
+#mydiv .box .content>div.fr li.li1 {
+    margin-bottom: 17px;
+}
+
+#mydiv .box .content>div.fr li.li2 p {
+    width: 320px;
+}
+
+#mydiv .box .content>div.fr li.li2 {
+    margin-bottom: 18px;
+}
+
+#mydiv .box .content>div.fr li.li3 p {
+    width: 368px;
+}
+
+#mydiv .box .content li {
+    width: 336px;
+}
+
+#mydiv .box .content li a {
+    width: 226px;
+    height: 32px;
+    text-align: center;
+    line-height: 32px;
+    background-color: #FF7062;
+    font-size: 14px;
+    color: #ffffff;
+    border-radius: 3px;
+    box-shadow:0px 2px 4px rgba(0,0,0,0.23);
+    float: right;
+    margin-top: 8px;
+}
+
+#mydiv .box .content li a:hover {
+    opacity: 0.8;
+}

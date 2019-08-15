@@ -1,0 +1,5 @@
+.foot { width: 100%;height: 4.013333rem;background-color: #555555; }
+.foot>div.t { padding-left: 0.653333rem; padding-top: 0.853333rem; padding-right: 0.653333rem; }
+.foot>div.t img { width: 3.786666rem; height: 1rem; }
+.foot>div.t span { font-size: 0.48rem; color: #FFFFFF; line-height: 1rem; }
+.foot>p { font-size: 0.32rem; color: #FFFFFF; padding-top: 0.4rem; padding-left: 0.653333rem; line-height: 0.48rem; }

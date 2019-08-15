@@ -1,0 +1,297 @@
+.city {
+    width: 100%;
+    height: 38px;
+    background-color: #F8F8F8;
+    border-bottom: 1px solid #DBDBDB;
+}
+
+.city>div {
+    width: 1536px;
+    height: 38px;
+    margin: 0 auto;
+}
+
+.city>div>div.fl img {
+    width: 14px;
+    height: 14px;
+    margin-bottom: 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.city>div>div.fl {
+    font-size: 0;
+}
+
+.city>div>div.fl span {
+    font-size: 14px;
+    display: inline-block;
+    height: 100%;
+    margin-left: 5px;
+    line-height: 38px;
+}
+
+.city>div>div.fl a {
+    display: inline-block;
+    color: #FF7062;
+    margin-left: 4px;
+    font-size: 14px;
+    line-height: 38px;
+}
+
+.city>div>div.fl a:hover {
+    text-decoration: underline;
+    font-size: 14px;
+    line-height: 38px;
+}
+
+.city>div>div.fl em {
+    display: inline-block;
+    font-size: 14px;
+    padding: 0 18px;
+    line-height: 38px;
+}
+
+.city>div>div.fl i {
+    font-size: 14px;
+    line-height: 38px;
+}
+
+.city>div>div.fr>div {
+    font-size: 0;
+    height: 38px;
+    cursor: pointer;
+}
+
+.city>div>div.fr>div img.icon {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 2px;
+}
+
+.city>div>div.fr>div span {
+    font-size: 14px;
+    line-height: 38px;
+    vertical-align: middle;
+}
+
+.city>div>div.fr>div .ewm {
+    width: 115px;
+    height: 115px;
+    position: absolute;
+    top: 40px;
+    left: -20%;
+    z-index: 999999;
+    display: none;
+}
+
+.city>div>div.fr>em {
+    font-size: 14px;
+    line-height: 38px;
+    display: inline-block;
+    padding: 0 18px;
+}
+
+/* topNav */
+.topNav {
+    width: 100%;
+    height: 99px;
+    background-color: #fff;
+    position: relative;
+    z-index: 999;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.abcBannav {
+    width: 100%;
+    height: 99px;
+    display: none;
+}
+
+.topNavBox {
+    width: 1536px;
+    margin-left: auto;
+    margin-right: auto;
+    position: static;
+}
+
+.topNav .topNavBox>a>img {
+    width: 150px;
+    margin-top: 27px;
+    margin-right: 32px;
+}
+
+.topNav .nav {
+    position: static;
+}
+
+.topNav .nav>div.fl {
+    position: static;
+}
+
+.topNav .nav>div.fl>a {
+    float: left;
+    line-height: 96px;
+    margin: 0 14px;
+    font-size: 16px;
+    color: #000000;
+    font-weight: 400;
+}
+
+.topNav .nav>div.fl:hover>a {
+    color: #FF5B5A;
+    border-bottom: 3px solid #FF7062;
+}
+
+.topNav .nav>div.fl a.active {
+    border-bottom: 3px solid #FF7062;
+}
+
+.topNav .nav>div.fl .box {
+    width: 100%;
+    background-color: #FFFFFF;
+    background-color: rgba(255, 255, 255, 0.9);
+    left: 0;
+    top: 99px;
+    position: absolute;
+    display: none;
+    padding-bottom: 32px;
+    z-index: 999;
+}
+
+.topNav .nav>div.fl .box>div {
+    width: 1040px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.topNav .nav>div.fl .box>div h3 {
+    font-size: 15px;
+    color: #FF5B5A;
+    margin-top: 22px;
+    margin-bottom: 10px;
+}
+
+.topNav .nav>div.fl .box>div>div a {
+    font-size: 15px;
+    color: #333333;
+    width: 140px;
+    display: inline-block;
+}
+
+.topNav .nav>div.fl .box>div>div a:hover {
+    color: #FF5B5A;
+}
+
+.topNavBox .ss {
+    border-left: 2px solid #333333;
+    padding-left: 15px;
+    margin-top: 37px;
+}
+
+.topNavBox .ss h3 {
+    display: inline-block;
+    height: 22px;
+    cursor: pointer;
+    margin-right: 40px;
+}
+
+.topNavBox .ss h3 img {
+    width: 21px;
+    height: 22px;
+}
+
+.topNavBox .ss .input {
+    height: 30px;
+    border: 1px solid #FF7062;
+    border-radius: 4px;
+    line-height: 30px;
+    font-size: 13px;
+    display: none;
+    margin-right: 17px;
+}
+
+.topNavBox .ss .input input {
+    float: left;
+    height: 30px;
+    text-indent: 15px;
+}
+
+.topNavBox .ss .input button {
+    width: 41px;
+    height: 30px;
+    background-color: #FF7062;
+    border-radius: 0 4px 4px 0;
+    float: left;
+    position: relative;
+}
+
+.topNavBox .ss .input button img {
+    width: 18px;
+    height: 19px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -9.5px;
+    margin-left: -9px;
+}
+
+.topNav .phoneR {
+    line-height: 99px;
+    font-size: 0;
+    color: #222222;
+    font-weight: bold;
+}
+
+.topNav .phoneR>img {
+    width: 52px;
+    height: 52px;
+    margin-right: 12px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.topNav .phoneR span {
+    font-size: 24px;
+    vertical-align: middle;
+    overflow: hidden;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+/* 媒体查询 判定在小屏幕下改变顶部导航样式 */
+@media screen and (max-width: 1440px) {
+    .topNavBox {
+        width: 1345px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .city>div {
+        width: 1345px;
+        margin: 0 auto;
+    }
+
+    .topNav .topNavBox>a>img {
+        width: 164px;
+    }
+
+    .topNav .nav>div.fl>a {
+        font-size: 14px;
+        margin: 0 11px;
+    }
+
+    .topNav .phoneR>img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .topNav .phoneR span {
+        font-size: 22px;
+    }
+
+    .topNavBox .ss .input input {
+        width: 150px;
+    }
+}
