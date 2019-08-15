@@ -4,7 +4,7 @@ function go() {
 	var width = 688;
 	var top = Math.round((window.screen.height - height) / 2);
 	var left = Math.round((window.screen.width - width) / 2);
-	window.open("https://tb.53kf.com/code/client/d794c640cf28f4f6196ded951e3d164f/2", "newwindow", "height=" + height +
+	window.open("https://tb.53kf.com/code/client/d794c640cf28f4f6196ded951e3d164f/3", "newwindow", "height=" + height +
 		", width=" + width + ", top=" + top + ", left= " + left +
 		", toolbar =no, menubar=no, scrollbars=no, resizable=no, location=no, status=no");
 }
@@ -53,12 +53,7 @@ var _hmt = _hmt || [];
 })();
 
 // 53
-(function () {
-	var _53code = document.createElement("script");
-	_53code.src = "https://tb.53kf.com/code/code/d794c640cf28f4f6196ded951e3d164f/2";
-	var s = document.getElementsByTagName("script")[0];
-	s.parentNode.insertBefore(_53code, s);
-})();
+(function () { var _53code = document.createElement("script"); _53code.src = "https://tb.53kf.com/code/code/d794c640cf28f4f6196ded951e3d164f/3"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(_53code, s); })();
 
 // 云雀
 // (function(scope, globalName, ApiAddress) {
