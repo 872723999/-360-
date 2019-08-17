@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html class="no-j">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- 360站长平台验证 标签 -->
+    <meta name="360-site-verification" content="52eb8cf28a2646b712dcc9337b3a7a0a" />
+    <!-- 顶部icon -->
+    <link rel="shortcut icon" href="./static/home/img/favicon.ico">
+    <!-- 公共样式 -->
+    <link rel="stylesheet" href="./static/mobile/css/pubilc/share.css">
+    <!-- jQuery -->
+    <script type="text/javascript" src="./static/mobile/js/pubilc/jquery-1.12.3.min.js"></script>
+    <!-- swiper -->
+    <link rel="stylesheet" href="./static/mobile/css/pubilc/swiper/swiper.min.css">
+    <script type="text/javascript" src="./static/mobile/js/pubilc/swiper/swiper.min.js"></script>
+    <!-- 封装弹窗插件 -->
+    <link rel="stylesheet" href="./static/mobile/css/pubilc/dialog/dialog.css">
+    <script type="text/javascript" src="./static/mobile/js/pubilc/dialog/mDialogMin.js"></script>
+    <!-- 表单提交封装 -->
+    <script type="text/javascript" src="./static/mobile/js/pubilc/formUp.js"></script>
+    <!-- 顶部导航 -->
+    <link rel="stylesheet" href="./static/mobile/css/pubilc/nav/index.css">
+    <!-- 底部 -->
+    <link rel="stylesheet" href="./static/mobile/css/pubilc/foot/index.css">
+    <!-- 底部悬浮 -->
+    <link rel="stylesheet" href="./static/mobile/css/pubilc/botFixed/index.css">
+    <!-- 移动端适配 -->
+    <script type="text/javascript" src="./static/mobile/js/pubilc/flexible.js"></script>
+
+    <script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=5SaMHni778BPbnZ1LzTmpZQzpAyrS0xi&s=1">
+    </script>
+    <script src="https://pv.sohu.com/cityjson?ie=utf-8"></script>
+    <script>
+        function uuid() {
+            var s = [];
+            var hexDigits = "0123456789abcdef";
+            for (var i = 0; i < 36; i++) {
+                s[i] = hexDigits.substr(Math.floor(Math.random() * 0x10), 1);
+            }
+            s[14] = "4"; // bits 12-15 of the time_hi_and_version field to 0010
+            s[19] = hexDigits.substr((s[19] & 0x3) | 0x8, 1); // bits 6-7 of the clock_seq_hi_and_reserved to 01
+            s[8] = s[13] = s[18] = s[23] = "-";
+
+            var uuid = s.join("");
+            return uuid;
+        }
+
+        var getuuid = localStorage.getItem("uuid");
+        var cip = returnCitySN["cip"];
+        if (!getuuid) {
+            var map = new BMap.Map("container");
+            var nowCity = new BMap.LocalCity();
+            nowCity.get(bdGetPosition);
+
+            function bdGetPosition(result) {
+                var cityName = result.name; //当前的城市名
+                var currentUuid = uuid();
+                localStorage.setItem("uuid", currentUuid);
+                $.ajax({
+                    type: "post",
+                    url: "https://web.beliwin.com/api/index/prohibit_user",
+                    data: {
+                        uuid: currentUuid,
+                        address: cityName,
+                        ip: cip
+                    },
+                    dataType: "json",
+                    success: function (response) {
+                        console.log(response);
+                    }
+                });
+            }
+        } else {
+            $.ajax({
+                type: "get",
+                url: "https://web.beliwin.com/api/index/get_prohibit_user",
+                dataType: "json",
+                success: function (response) {
+                    $.each(response.datas, function (indexInArray, valueOfElement) {
+                        if (valueOfElement.uuid == getuuid) {
+                            window.location.href =
+                                "https://image.baidu.com/search/detail?ct=503316480&z=0&ipn=d&word=%E8%A1%80%E8%85%A5&step_word=&hs=0&pn=81&spn=0&di=47080&pi=0&rn=1&tn=baiduimagedetail&is=0%2C0&istype=2&ie=utf-8&oe=utf-8&in=&cl=2&lm=-1&st=-1&cs=2358000980%2C526723213&os=625406598%2C657768987&simid=3485606225%2C243207580&adpicid=0&lpn=0&ln=461&fr=&fmq=1565675124053_R&fm=result&ic=&s=undefined&hd=&latest=&copyright=&se=&sme=&tab=0&width=&height=&face=undefined&ist=&jit=&cg=&bdtype=0&oriquery=&objurl=http%3A%2F%2Fs9.rr.itc.cn%2Fr%2FwapChange%2F20171_6_18%2Fa3rj3934795606947405.jpg&fromurl=ippr_z2C%24qAzdH3FAzdH3F4_z%26e3Bf5i7_z%26e3Bv54AzdH3FgAzdH3F900ll8lcnAzdH3F&gsm=1e&rpstart=0&rpnum=0&islist=&querylist=&force=undefined";
+                        }
+                    });
+                }
+            });
+        }
+    </script>
+    <!-- 当前网站样式 -->
+    <link rel="stylesheet" href="./static/mobile/css/yingxiaogl/index.css">
+</head>
+
+<body>
+
+    <!-- topBanner -->
+    <div class="top_nav clearfix">
+        <img src="./static/mobile/img/yingxiaoform/logo.png" class="fl" alt="">
+        <div class="fr">
+            <p>100%美国名校学长服务你</p>
+            <span>免费热线：<b>010-65978817</b></span>
+        </div>
+    </div>
+    <div class="top_nav1"></div>
+
+    <!-- banner -->
+    <div class="banner">
+        <div class="swiper-container" id="swiper1">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./static/mobile/img/yingxiaodxpm/banner.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./static/mobile/img/yingxiaodxpm2/banner11.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./static/mobile/img/yingxiaodxpm2/banner2.jpg" alt="">
+                </div>
+            </div>
+            <div class="swiper-pagination" id="page1"></div>
+        </div>
+    </div>
+
+    <!-- 出国留学你需要了解这些 -->
+    <div class="liaojie">
+        <h3 class="title">出国留学你需要了解这些</h3>
+        <div class="content clearfix">
+            <div class="box fl" onclick="go()">留学费用</div>
+            <div class="box fl" onclick="go()">申请条件</div>
+            <div class="box fl" onclick="go()">时间规划</div>
+            <div class="box fl" onclick="go()">申请流程</div>
+            <div class="box fl" onclick="go()">院校排名</div>
+            <div class="box fl" onclick="go()">热门专业</div>
+            <div class="box fl" onclick="go()">最新政策</div>
+            <div class="box fl" onclick="go()">语言培训</div>
+            <div class="box fl" onclick="go()">背景提升</div>
+        </div>
+        <a onclick="go()" class="a">查看更多留学问题</a>
+    </div>
+
+    <!-- 大学排名TOP100 -->
+    <div class="top100">
+        <h3 class="title">大学排名TOP100</h3>
+        <table>
+            <tr>
+                <th>2019排名</th>
+                <th>学校名称</th>
+                <th>申请条件</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>普林斯顿大学</td>
+                <td><a>查看并获取提升方案&gt;&gt;</a></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>哈佛大学</td>
+                <td><a>查看并获取提升方案&gt;&gt;</a></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>哥伦比亚大学</td>
+                <td><a>查看并获取提升方案&gt;&gt;</a></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>麻省理工</td>
+                <td><a>查看并获取提升方案&gt;&gt;</a></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>芝加哥大学</td>
+                <td><a>查看并获取提升方案&gt;&gt;</a></td>
+            </tr>
+        </table>
+        <a class="a" onclick="go()">点击测试自己能上哪所大学>></a>
+    </div>
+
+    <!-- 专业排名TOP100 -->
+    <div class="zhuanye">
+        <h3 class="title">专业排名TOP100</h3>
+        <table>
+            <tr>
+                <th>专业类别</th>
+                <th>专业名称</th>
+                <th>申请条件</th>
+            </tr>
+            <tr>
+                <td>艺术与人文</td>
+                <td>艺术与设计</td>
+                <td><a>测试兴趣吻合度&gt;&gt;</a></td>
+            </tr>
+            <tr>
+                <td>工程与技术类</td>
+                <td>化学工程</td>
+                <td><a>测试兴趣吻合度&gt;&gt;</a></td>
+            </tr>
+            <tr>
+                <td>社会科学与管理</td>
+                <td>会计金融</td>
+                <td><a>测试兴趣吻合度&gt;&gt;</a></td>
+            </tr>
+            <tr>
+                <td>生命科学与医学</td>
+                <td>农业与林业</td>
+                <td><a>测试兴趣吻合度&gt;&gt;</a></td>
+            </tr>
+            <tr>
+                <td>自然科学</td>
+                <td>环境科学</td>
+                <td><a>测试兴趣吻合度&gt;&gt;</a></td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- 选择入学阶段 -->
+    <div class="jieduan">
+        <h3 class="title">选择入学阶段</h3>
+        <div class="content clearfix">
+            <div class="box fl">
+                <h4>初中<br>申请留学</h4>
+                <a onclick="go()">留学条件查看</a>
+            </div>
+            <div class="box fl">
+                <h4>高中<br>申请留学</h4>
+                <a onclick="go()">留学条件查看</a>
+            </div>
+            <div class="box fl">
+                <h4>专科<br>申请留学</h4>
+                <a onclick="go()">留学条件查看</a>
+            </div>
+            <div class="box fl">
+                <h4>本科<br>申请留学</h4>
+                <a onclick="go()">留学条件查看</a>
+            </div>
+            <div class="box fl">
+                <h4>硕士<br>申请留学</h4>
+                <a onclick="go()">留学条件查看</a>
+            </div>
+            <div class="box fl">
+                <h4>博士<br>申请留学</h4>
+                <a onclick="go()">留学条件查看</a>
+            </div>
+        </div>
+        <a onclick="go()" class="a">查看更多入学阶段</a>
+    </div>
+
+    <!-- 留学各项费用一览表 -->
+    <div class="feiyong">
+        <h3 class="title">留学各项费用一览表</h3>
+        <div class="content clearfix">
+            <div class="box fl">
+                <img src="./static/mobile/img/yingxiaodxpm2/feiyong1.jpg" alt="">
+                <h4>签证费</h4>
+                <a onclick="go()">点击查看&gt;&gt;</a>
+            </div>
+            <div class="box fl">
+                <img src="./static/mobile/img/yingxiaodxpm2/feiyong2.jpg" alt="">
+                <h4>车旅费</h4>
+                <a onclick="go()">点击查看&gt;&gt;</a>
+            </div>
+            <div class="box fl">
+                <img src="./static/mobile/img/yingxiaodxpm2/feiyong3.jpg" alt="">
+                <h4>手机和上网</h4>
+                <a onclick="go()">点击查看&gt;&gt;</a>
+            </div>
+            <div class="box fl">
+                <img src="./static/mobile/img/yingxiaodxpm2/feiyong4.jpg" alt="">
+                <h4>汽油和行车<br />保险</h4>
+                <a onclick="go()">点击查看&gt;&gt;</a>
+            </div>
+            <div class="box fl">
+                <img src="./static/mobile/img/yingxiaodxpm2/feiyong5.jpg" alt="">
+                <h4>医疗和人生<br />保险</h4>
+                <a onclick="go()">点击查看&gt;&gt;</a>
+            </div>
+            <div class="box fl">
+                <img src="./static/mobile/img/yingxiaodxpm2/feiyong6.jpg" alt="">
+                <h4>学费</h4>
+                <a onclick="go()">点击查看&gt;&gt;</a>
+            </div>
+        </div>
+        <a onclick="go()" class="a">教你如何省钱，点击咨询</a>
+    </div>
+
+    <!-- 留学录取榜 -->
+    <div class="luqu">
+        <h3 class="title">留学录取榜</h3>
+        <div class="box clearfix">
+            <img src="./static/mobile/img/yingxiaodxpm/changchunteng1.png" class="fl" alt="">
+            <div class="fl">
+                <h4>B同学</h4>
+                <p><b>就读学校：</b>哈佛大学</p>
+                <p><b>考试成绩：</b>TOEFL:107 SAT:1530 GPA:4.25</p>
+            </div>
+        </div>
+        <div class="box clearfix">
+            <img src="./static/mobile/img/yingxiaodxpm/changchunteng2.png" class="fl" alt="">
+            <div class="fl">
+                <h4>J同学</h4>
+                <p><b>就读学校：</b>普林斯顿大学</p>
+                <p><b>考试成绩：</b>TOEFL:110， SAT:1550，GPA:3.86</p>
+            </div>
+        </div>
+        <div class="box clearfix">
+            <img src="./static/mobile/img/yingxiaodxpm/changchunteng3.png" class="fl" alt="">
+            <div class="fl">
+                <h4>F同学</h4>
+                <p><b>就读学校：</b>耶鲁大学</p>
+                <p><b>考试成绩：</b>TOEFL:110， SAT:1580，GPA:3.9</p>
+            </div>
+        </div>
+        <p>想和他们一样成功牵手名校吗?还等什么！</p>
+        <a onclick="go()" class="a">点此开启您的名校之旅&gt;&gt;</a>
+    </div>
+
+    <!-- 名师推荐 -->
+    <div class="mingshi">
+        <h3 class="title">名师推荐</h3>
+        <div class="box clearfix">
+            <img src="./static/mobile/img/yingxiaodxpm2/daoshi1.jpg" class="fl" alt="">
+            <div class="fl">
+                <h4>Mentor Lu</h4>
+                <p>南加州大学硕士学位，为学生提供独特的专业和职业建议。</p>
+                <span><b>擅长：</b>职业规划咨询、选校选专业咨询建议、文书把关、模拟面试</span>
+            </div>
+        </div>
+        <div class="box clearfix">
+            <img src="./static/mobile/img/yingxiaodxpm2/daoshi2.jpg" class="fl" alt="">
+            <div class="fl">
+                <h4>Allen Wong</h4>
+                <p>德州农工大学化学工程硕士，熟知美国各高校。</p>
+                <span><b>擅长：</b>名校申请规划、院校咨询、简历咨询、面试辅导</span>
+            </div>
+        </div>
+        <div class="box clearfix">
+            <img src="./static/mobile/img/yingxiaodxpm2/daoshi3.jpg" class="fl" alt="">
+            <div class="fl">
+                <h4>Tiare Police</h4>
+                <p>夏威夷预备学校招生办 招生主任</p>
+                <span><b>擅长：</b>文书母语润色、词汇句法优化、素材结构建议</span>
+            </div>
+        </div>
+        <a onclick="go()" class="a">查看更多名师</a>
+    </div>
+
+    <div class="bb">
+        <a href="tel:01065978817">免费热线</a>
+        <a onclick="go()" class="a2">咨询顾问</a>
+    </div>
+    <div class="bb1"></div>
+
+    <div class="b_f1"></div>
+
+
+
+
+    <script src="/static/home/js/public/http.js"></script>
+    <script src="/static/home/js/public/tab.js"></script>
+    <script>
+        var mySwiper = new Swiper('#swiper1', {
+            pagination: {
+                el: '#page1',
+                clickable: true,
+            }
+        })
+    </script>
+
+    <!-- 铂金 -->
+    <script type="text/javascript">
+        window._pt_lt = new Date().getTime();
+        window._pt_sp_2 = [];
+        _pt_sp_2.push('setAccount,259adec7');
+        var _protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+        (function () {
+            var atag = document.createElement('script');
+            atag.type = 'text/javascript';
+            atag.async = true;
+            atag.src = _protocol + 'js.ptengine.cn/259adec7.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(atag, s);
+        })();
+    </script>
+
+
+    <!-- 53 -->
+    <script>
+        (function () {
+            var _53code = document.createElement("script");
+            _53code.src = "https://tb.53kf.com/code/code/d794c640cf28f4f6196ded951e3d164f/2";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(_53code, s);
+        })();
+    </script>
+
+    <!-- 商务通 -->
+    <!-- <script language="javascript" src="https://dvt.zoosnet.net/LR/Chatpre.aspx?id=DVT56740265&lng=cn"></script> -->
+
+    <script>
+        function go() {
+            window.open('https://tb.53kf.com/code/client/d794c640cf28f4f6196ded951e3d164f/2');
+            // var _53 = $53.createApi(); /*开发者文档1.1 创建SDK资源对象*/
+            // _53.push('cmd', 'comeinfo'); /*开发者文档1.11 图文链接*/
+            // _53.push('title', '标题');
+            // _53.push('logo', 'http://www5.53kf.com/style/setting/ver07/img/mobile_config/icon2.png');
+            // _53.push('content', '内容111');
+            // _53.push('curl', 'http://www.53kf.com');
+            // _53.query();
+
+            // _53.push('cmd', 'mtalk'); /*开发者文档1.7 主动发起(手机端)*/
+            // _53.query();
+        }
+    </script>
+    {include file="common/public_yingxiao"}
+</body>
+
+</html>

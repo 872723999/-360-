@@ -1,0 +1,386 @@
+/* top_nav */
+.top_nav {
+    width: 100%;
+    height: 1.6rem;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    z-index: 998;
+}
+
+.top_nav img {
+    width: 3.68rem;
+    height: 1rem;
+    margin-top: 0.293333rem;
+    margin-left: 0.373333rem;
+}
+
+.top_nav>div.fr {
+    margin-top: 0.32rem;
+    margin-right: 0.373333rem;
+}
+
+.top_nav>div.fr p {
+    font-size: 0.373333rem;
+    color: #F85415;
+    margin-bottom: 0.026667rem;
+}
+
+.top_nav>div.fr span {
+    font-size: 0.32rem;
+}
+
+.top_nav>div.fr span b {
+    color: #F85415;
+}
+
+.top_nav1 {
+    width: 100%;
+    height: 1.6rem;
+}
+
+
+/* bb */
+.bb {
+    width: 100%;
+    height: 1.28rem;
+    font-size: 0;
+    position: fixed;
+    bottom: 0;
+    z-index: 9999;
+}
+
+.bb a {
+    display: inline-block;
+    font-size: 0.426667rem;
+    line-height: 1.28rem;
+    width: 50%;
+    text-align: center;
+    background-color: #FF9407;
+    color: #ffffff;
+}
+
+.bb a::before {
+    content: '';
+    width: 0.533333rem;
+    height: 0.533333rem;
+    display: inline-block;
+    background: url(../../img/yingxiaoform/phone.png) no-repeat center center;
+    background-size: cover;
+    vertical-align: middle;
+    margin-bottom: 0.053333rem;
+    margin-right: 0.16rem;
+}
+
+.bb .a2 {
+    background-color: #E93636;
+}
+
+.bb .a2::before {
+    background-image: url(../../img/yingxiaoform/zx.png);
+}
+
+.bb1 {
+    width: 100%;
+    height: 1.28rem;
+}
+
+/* banner */
+.banner {
+    width: 100%;
+    height: 6.453333rem;
+    background: url(../../img/yingxiaofy/banner.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+/* title */
+h3.title {
+    font-size: 0.586667rem;
+    text-align: center;
+    padding: 0.933333rem 0 0.48rem;
+}
+
+/* 留学费用早知道 */
+.fy_zdd .content {
+    width: 9.253333rem;
+    margin: 0 auto;
+}
+
+.fy_zdd .content .box {
+    width: 2.933333rem;
+    height: 2.453333rem;
+    margin-right: 0.213333rem;
+    border: 0.026667rem solid #FEC6C5;
+    box-sizing: border-box;
+    border-radius: 0.04rem;
+}
+
+.fy_zdd .content .box:last-child {
+    margin-right: 0;
+}
+
+.fy_zdd .content .box h4 {
+    text-align: center;
+    font-size: 0.4rem;
+    padding: 0.266667rem 0 0.24rem;
+}
+
+.fy_zdd .content .box a {
+    width: 2.24rem;
+    height: 0.586667rem;
+    text-align: center;
+    line-height: 0.586667rem;
+    font-size: 0.32rem;
+    color: #ffffff;
+    margin: 0 auto;
+    background-color: #FE5241;
+    border-radius: 0.4rem;
+}
+
+/* 关于费用你是否在意以下问题 */
+.wenti .content {
+    width: 9.253333rem;
+    height: 5.12rem;
+    background: url(../../img/yingxiaofy/beijing1.jpg) no-repeat center center;
+    background-size: cover;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.wenti .content::after {
+    content: '';
+    width: 0;
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.wenti .content ul {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+}
+
+.wenti .content li {
+    font-size: 0.373333rem;
+    color: #ffffff;
+    margin-bottom: 0.266667rem;
+}
+
+.wenti .content li::before {
+    content: '';
+    width: 0.16rem;
+    height: 0.16rem;
+    border-radius: 50%;
+    background-color: #ffffff;
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 0.053333rem;
+    margin-right: 0.266667rem;
+}
+
+.wenti>p {
+    width: 9.253333rem;
+    display: block;
+    margin: 0 auto;
+    line-height: 0.64rem;
+    font-size: 0.373333rem;
+    margin-top: 0.4rem;
+}
+
+/* a.a */
+a.a {
+    width: 7.626667rem;
+    height: 1.12rem;
+    text-align: center;
+    background-color: #FE5241;
+    border-radius: 0.04rem;
+    box-shadow: 0px 2px 4px rgba(36, 15, 7, 0.32);
+    line-height: 1.12rem;
+    font-size: 0.48rem;
+    color: #ffffff;
+    font-weight: bold;
+    margin: 0.533333rem auto 1.066667rem;
+}
+
+/* 出国留学前费用明细一览表 */
+.yilanbiao {
+    width: 100%;
+    height: 16.146667rem;
+    background: url(../../img/yingxiaofy/beijing2.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.yilanbiao .content {
+    width: 9.253333rem;
+    margin: 0 auto;
+}
+
+.yilanbiao .content .box {
+    width: 4.48rem;
+    height: 2.026667rem;
+    border: 0.026667rem solid #FEC6C5;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    margin-right: 0.24rem;
+    margin-bottom: 0.186667rem;
+}
+
+.yilanbiao .content .box:nth-child(2n) {
+    margin-right: 0;
+}
+
+.yilanbiao .content .box h4 {
+    text-align: center;
+    font-size: 0.48rem;
+    padding: 0.266667rem 0 0.186667rem;
+}
+
+.yilanbiao .content .box a {
+    width: 2.826667rem;
+    height: 0.613333rem;
+    text-align: center;
+    line-height: 0.613333rem;
+    background-color: #FE5241;
+    border-radius: 0.4rem;
+    font-size: 0.32rem;
+    color: #ffffff;
+    margin: 0 auto;
+}
+
+/* 奖学金申请全攻略 */
+.gonglue table {
+    width: 9.253333rem;
+    border: 0.026667rem solid #FE5241;
+    box-sizing: border-box;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+.gonglue table th,
+.gonglue table td {
+    background-color: #FFDAD6;
+    font-size: 0.373333rem;
+    height: 0.96rem;
+    box-sizing: border-box;
+    font-weight: normal;
+    border: 0.026667rem solid #FE5241;
+}
+
+.gonglue table td {
+    background-color: transparent;
+    text-align: center;
+}
+
+.gonglue table td a {
+    color: #FE5241;
+    text-decoration: underline;
+}
+
+/* 拿到奖学金的学生们 */
+.jiangxuejin {
+    width: 100%;
+    height: 15.786667rem;
+    background-color: #EFF0F2;
+}
+
+.jiangxuejin .box {
+    width: 9.253333rem;
+    height: 3.306667rem;
+    border: 0.026667rem solid #FBAB8E;
+    background-color: #ffffff;
+    margin: 0 auto 0.266667rem;
+    box-sizing: border-box;
+    box-shadow: 0px 3px 6px rgba(99, 98, 98, 0.16);
+}
+
+.jiangxuejin .box img.fl {
+    width: 2.2rem;
+    height: 2.2rem;
+    margin: 0.466667rem 0.506667rem 0 0.48rem;
+}
+
+.jiangxuejin .box>div.fl h3 {
+    font-size: 0.373333rem;
+    padding: 0.466667rem 0 0.133333rem;
+}
+
+.jiangxuejin .box>div.fl p {
+    font-size: 0.32rem;
+    margin-bottom: 0.133333rem;
+}
+
+.jiangxuejin .box>div.fl a {
+    font-size: 0.32rem;
+    color: #FE5241;
+    text-decoration: underline;
+    margin-left: 2.186667rem;
+}
+
+.jiangxuejin a.a {
+    margin-bottom: 0;
+}
+
+/* 留学相关省钱攻略 */
+.shengqian .content {
+    width: 9.253333rem;
+    margin: 0 auto;
+}
+
+.shengqian .content .box {
+    width: 2.88rem;
+    height: 3.08rem;
+    border: 0.026667rem solid #F59187;
+    border-radius: 0.066667rem;
+    box-sizing: border-box;
+    margin-bottom: 0.266667rem;
+    margin-right: 0.266667rem;
+}
+
+.shengqian .content .box:nth-child(3n) {
+    margin-right: 0;
+}
+
+.shengqian .content .box .img {
+    width: 1.44rem;
+    height: 1.44rem;
+    margin: 0.266667rem auto 0.4rem;
+}
+
+.shengqian .content .box .img.two {
+    margin-bottom: 0.133333rem;
+}
+
+.shengqian .content .box img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.shengqian .content .box p {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 0.48rem;
+    text-align: center;
+    line-height: 1.44rem;
+    color: #ffffff;
+}
+
+.shengqian .content .box span {
+    text-align: center;
+    display: block;
+    font-size: 0.373333rem;
+}
+
+/* 关于彬彬教育 */
+.guanyu {
+    width: 100%;
+    height: 6.253333rem;
+    background: url(../../img/page/xinxi1/bottom.png) no-repeat center center;
+    background-size: cover;
+}
