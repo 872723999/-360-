@@ -1,0 +1,299 @@
+.g {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* banner */
+.banner {
+    width: 100%;
+    height: 500px;
+    background: url(/static/home/img/yingxiaonewfw/banner.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+/* title */
+h3.title {
+    text-align: center;
+    font-size: 40px;
+    padding: 76px 0 32px;
+}
+
+/* 留学费用早知道 */
+.zaozhidao .content .box {
+    width: 316px;
+    height: 200px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background: url(/static/home/img/yingxiaonewfw/feiyong1.jpg) no-repeat center center;
+    background-size: cover;
+    margin-right: 25px;
+}
+
+.zaozhidao .content .box2 {
+    background-image: url(/static/home/img/yingxiaonewfw/feiyong2.jpg);
+}
+
+.zaozhidao .content .box3 {
+    background-image: url(/static/home/img/yingxiaonewfw/feiyong3.jpg);
+    margin-right: 0;
+}
+
+.zaozhidao .content .box h4 {
+    text-align: center;
+    font-size: 28px;
+    line-height: 38px;
+    padding: 25px 0 19px;
+}
+
+.zaozhidao .content .box a {
+    width: 257px;
+    height: 55px;
+    background-color: #FE5241;
+    border-radius: 30px;
+    text-align: center;
+    line-height: 55px;
+    font-size: 30px;
+    color: #ffffff;
+    margin: 0 auto;
+}
+
+/* 关于费用你是否在意以下问题 */
+.wenti .content {
+    width: 100%;
+    height: 279px;
+    border: 1px solid #FE968C;
+    background-color: #FBFBFB;
+    text-align: center;
+}
+
+.wenti .content::after {
+    content: '';
+    width: 0;
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.wenti .content ul {
+    width: 850px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+    font-size: 24px;
+    line-height: 48px;
+}
+
+.wenti .content ul li::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background-color: #FC7669;
+    vertical-align: middle;
+    border-radius: 50%;
+    margin-bottom: 2px;
+    margin-right: 9px;
+}
+
+.wenti .content ul li a {
+    color: #FF3E3E;
+}
+
+.wenti .content ul li a:hover {
+    text-decoration: underline;
+}
+
+.wenti>p {
+    font-size: 24px;
+    padding: 14px 0 0 19px;
+}
+
+/* a,a */
+a.a {
+    width: 432px;
+    height: 52px;
+    text-align: center;
+    line-height: 52px;
+    background-color: #FF3E3E;
+    border-radius: 3px;
+    font-size: 24px;
+    color: #ffffff;
+    margin: 37px auto 80px;
+}
+
+/* 关于费用你是否在意以下问题 */
+.zaiyi {
+    width: 100%;
+    height: 741px;
+    background: url(/static/home/img/yingxiaonewfw/beijing1.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.zaiyi .content .box {
+    width: 238px;
+    height: 116px;
+    box-sizing: border-box;
+    border: 1px solid #FEC6C5;
+    background-color: #ffffff;
+    margin-bottom: 14px;
+    margin-right: 14px;
+}
+
+.zaiyi .content .box:nth-child(4n) {
+    margin-right: 0;
+}
+
+.zaiyi .content .box h4 {
+    text-align: center;
+    font-size: 24px;
+    padding: 18px 0 16px;
+}
+
+.zaiyi .content .box a {
+    width: 152px;
+    height: 34px;
+    border-radius: 30px;
+    background-color: #FE5241;
+    text-align: center;
+    line-height: 34px;
+    font-size: 18px;
+    color: #ffffff;
+    margin: 0 auto;
+}
+
+/* 奖学金申请全攻略 */
+.gonglue table {
+    width: 100%;
+    border: 1px solid #FE5241;
+    box-sizing: border-box;
+    border-collapse: collapse;
+}
+
+.gonglue table th,
+.gonglue table td {
+    border: 1px solid #FE5241;
+    height: 68px;
+    box-sizing: border-box;
+    font-size: 28px;
+    background-color: #FFDAD6;
+}
+
+.gonglue table td {
+    background-color: #ffffff;
+    height: 64px;
+    text-align: center;
+}
+
+.gonglue table td a {
+    color: #FE5241;
+}
+
+.gonglue table td a:hover {
+    text-decoration: underline;
+}
+
+/* 拿到奖学金的学生们 */
+.jxjStu {
+    width: 100%;
+    height: 760px;
+    background-color: #F1F1F2;
+}
+
+.jxjStu .content .box {
+    width: 316px;
+    height: 392px;
+    background-color: #ffffff;
+    box-shadow:0px 2px 4px rgba(0,0,0,0.16);
+    margin-right: 24px;
+}
+
+.jxjStu .content .box3 {
+    margin-right: 0;
+}
+
+.jxjStu .content .box img {
+    width: 124px;
+    height: 124px;
+    display: block;
+    margin: 34px auto 20px;
+}
+
+.jxjStu .content .box h4 {
+    text-align: center;
+    font-size: 24px;
+    padding-bottom: 21px;
+}
+
+.jxjStu .content .box p {
+    padding: 0 23px;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.jxjStu .content .box a {
+    width: 250px;
+    height: 44px;
+    text-align: center;
+    line-height: 44px;
+    background-color: #FE585C;
+    border-radius: 30px;
+    font-size: 20px;
+    color: #ffffff;
+    margin: 20px auto 0;
+}
+
+.jxjStu .content .box2 a {
+    background-color: #FC7057;
+}
+
+.jxjStu .content .box3 a {
+    background-color: #FF7A3E;
+}
+
+/* 留学相关省钱攻略 */
+.shengqian .content .box {
+    width: 316px;
+    height: 228px;
+    border: 1px solid #F59187;
+    border-radius: 3px;
+    box-sizing: border-box;
+    margin-bottom: 17px;
+    margin-right: 26px;
+}
+
+.shengqian .content .box:nth-child(3n) {
+    margin-right: 0;
+}
+
+.shengqian .content .box .img {
+    width: 116px;
+    height: 116px;
+    display: block;
+    margin: 28px auto 22px;
+}
+
+.shengqian .content .box .img img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.shengqian .content .box .img span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 40px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 116px;
+}
+
+.shengqian .content .box p {
+    text-align: center;
+    font-size: 26px;
+}
