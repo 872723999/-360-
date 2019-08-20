@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <meta name="renderer" content="webkit">
+    <!-- 公共样式 -->
+    <link rel="stylesheet" href="./static/home/css/public/share.css" />
+    <!-- jQuery -->
+    <script type="text/javascript" src="./static/home/js/public/jquery-1.12.3.min.js"></script>
+    <!-- top -->
+    <link rel="stylesheet" href="./static/home/css/public/topNav.css" />
+
+    <script type="text/javascript" src="./static/home/js/public/qrcode.min.js"></script>
+
+    <!-- 粒子链接 -->
+    <script type="text/javascript" src="./static/home/js/public/canvas-particle.js"></script>
+    <!-- 数字滚动插件 -->
+    <script type="text/javascript" src="./static/home/js/public/countUp.min.js"></script>
+
+    <script type="text/javascript" src="./static/home/js/public/jquery.lazyload.js"></script>
+
+    <!-- swiper -->
+    <link rel="stylesheet" href="./static/home/css/public/swiper/idangerous.swiper.css" />
+    <script src="./static/home/js/public/swiper/idangerous.swiper.min.js" type="text/javascript" charset="utf-8">
+    </script>
+
+    <link rel="stylesheet" href="./static/home/css/common/common_calculation.css">
+    <script src="./static/fj.js"></script>
+    <script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=5SaMHni778BPbnZ1LzTmpZQzpAyrS0xi&s=1">
+    </script>
+    <script src="https://pv.sohu.com/cityjson?ie=utf-8"></script>
+
+    <!-- swiper -->
+    <link rel="stylesheet" href="./static/mobile/css/pubilc/swiper/swiper.min.css">
+    <script type="text/javascript" src="./static/mobile/js/pubilc/swiper/swiper.min.js"></script>
+
+    <!-- 当前网页样式 -->
+    <link rel="stylesheet" href="./static/home/css/page/yingxiaogl/index.css">
+
+</head>
+
+<body>
+    <!-- banner -->
+    <div class="banner"></div>
+
+    <!-- 出国留学你需要了解这些 -->
+    <div class="liaojie g">
+        <h3 class="title">出国留学你需要了解这些</h3>
+        <div class="content clearfix">
+            <a onclick="go()" class="fl">留学费用</a>
+            <a onclick="go()" class="fl">申请条件</a>
+            <a onclick="go()" class="fl">时间规划</a>
+            <a onclick="go()" class="fl">申请流程</a>
+            <a onclick="go()" class="fl">院校排名</a>
+            <a onclick="go()" class="fl">热门专业</a>
+            <a onclick="go()" class="fl">最新政策</a>
+            <a onclick="go()" class="fl">语言培训</a>
+            <a onclick="go()" class="fl">背景提升</a>
+            <a onclick="go()" class="fl">寄宿家庭</a>
+        </div>
+        <a onclick="go()" class="a">查看更多留学问题</a>
+    </div>
+
+    <!-- 大学排名TOP100 -->
+    <div class="top g">
+        <h3 class="title">大学排名TOP100</h3>
+        <table>
+            <tr>
+                <th>2019排名</th>
+                <th>学校名称</th>
+                <th>申请条件</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>普林斯顿大学</td>
+                <td><a onclick="go()">查看并获取提升方案&gt;&gt;</a></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>哈佛大学</td>
+                <td><a onclick="go()">查看并获取提升方案&gt;&gt;</a></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>哥伦比亚大学</td>
+                <td><a onclick="go()">查看并获取提升方案&gt;&gt;</a></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>麻省理工</td>
+                <td><a onclick="go()">查看并获取提升方案&gt;&gt;</a></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>芝加哥大学</td>
+                <td><a onclick="go()">查看并获取提升方案&gt;&gt;</a></td>
+            </tr>
+        </table>
+        <a onclick="go()" class="a">点击测试自己能上哪所大学</a>
+    </div>
+
+    <!-- 大学专业排名TOP100 -->
+    <div class="zytop">
+        <div class="g">
+            <h3 class="title">大学排名TOP100</h3>
+            <table>
+                <tr>
+                    <th>专业类别</th>
+                    <th>专业类别</th>
+                    <th>申请条件</th>
+                </tr>
+                <tr>
+                    <td>艺术与人文</td>
+                    <td>艺术与设计</td>
+                    <td><a onclick="go()">测试兴趣吻合度&gt;&gt;</a></td>
+                </tr>
+                <tr>
+                    <td>工程与技术类</td>
+                    <td>化学工程</td>
+                    <td><a onclick="go()">测试兴趣吻合度&gt;&gt;</a></td>
+                </tr>
+                <tr>
+                    <td>社会科学与管理</td>
+                    <td>会计金融</td>
+                    <td><a onclick="go()">测试兴趣吻合度&gt;&gt;</a></td>
+                </tr>
+                <tr>
+                    <td>生命科学与医学</td>
+                    <td>农业与林业</td>
+                    <td><a onclick="go()">测试兴趣吻合度&gt;&gt;</a></td>
+                </tr>
+                <tr>
+                    <td>自然科学</td>
+                    <td>环境科学</td>
+                    <td><a onclick="go()">测试兴趣吻合度&gt;&gt;</a></td>
+                </tr>
+            </table>
+            <a onclick="go()" class="a">查看并咨询更多热门专业</a>
+        </div>
+    </div>
+
+    <!--  你是否也担心下面这些问题 -->
+    <div class="danxin">
+        <h3 class="title">你是否也担心下面这些问题</h3>
+        <div class="content g">
+            <ul>
+                <li class="clearfix">美国学校的报名费用和学费是多少？<a onclick="go()" class="fr">查看详情&gt;&gt;</a></li>
+                <li class="clearfix">在美国生活一般要多少钱一个月？<a onclick="go()" class="fr">查看详情&gt;&gt;</a></li>
+                <li class="clearfix">办理签证手续和相关流程怎么收费？<a onclick="go()" class="fr">查看详情&gt;&gt;</a></li>
+                <li class="clearfix">怎么坐飞机买机票更划算？<a onclick="go()" class="fr">查看详情&gt;&gt;</a></li>
+                <li class="clearfix">想拿奖学金，有什么方法和技巧吗？<a onclick="go()" class="fr">查看详情&gt;&gt;</a></li>
+            </ul>
+        </div>
+        <p>自己在网上找答案，不如直接在线咨询，你需要一个老师，帮你解决费用问题！</p>
+        <a onclick="go()" class="a">查看优选答案并咨询老师</a>
+    </div>
+
+    <div class="gg g"></div>
+
+    <!-- 留学留学老师能为你做什么 -->
+    <div class="zuoshenme g">
+        <h3 class="title">留学留学老师能为你做什么</h3>
+        <div class="content clearfix">
+            <div class="box fl">
+                <h4>学校专业选择</h4>
+                <p>分析美国前50名大学和常青藤名校，结合自身经历兴趣和能力，匹配适合目标院校，老师会给出院校选择规划</p>
+            </div>
+            <div class="box box2 fl">
+                <h4>留学费用分析</h4>
+                <p>如何科学省钱，减少不必要的留学费用浪费，把钱花到刀刃上，老师会给出费用规划</p>
+            </div>
+            <div class="box box3 fl">
+                <h4>成功案例解析</h4>
+                <p>把十多年已成功留学的案例，剖析出来，结合自身情况，加以学习和巩固</p>
+            </div>
+            <div class="box box4 fl">
+                <h4>留学中介选择</h4>
+                <p>留学是一个系统工程，自己DIY的话很难，容易卡在某一环节，选择有经验的机构是明智之选</p>
+            </div>
+        </div>
+        <a onclick="go()" class="a">咨询在线留学老师</a>
+    </div>
+
+    <!-- 好不好，被录取的学员说了算！ -->
+    <div class="anli">
+        <h3 class="title">好不好，被录取的学员说了算！</h3>
+        <div class="content g clearfix">
+            <div class="box fl">
+                <img src="./static/home/img/page/yingxiaogl/changchunteng1.jpg" alt="">
+                <h4>B同学</h4>
+                <p>哈佛大学</p>
+                <span>考试成绩 : TOEFL:107，SAT:1530，GPA:4.25</span>
+            </div>
+            <div class="box fl">
+                <img src="./static/home/img/page/yingxiaogl/changchunteng2.jpg" alt="">
+                <h4>F同学</h4>
+                <p>耶鲁大学</p>
+                <span>考试成绩 : TOEFL:110， SAT:1580，GPA:3.9</span>
+            </div>
+            <div class="box fl">
+                <img src="./static/home/img/page/yingxiaogl/changchunteng3.jpg" alt="">
+                <h4>G同学</h4>
+                <p>哥伦比亚大学</p>
+                <span>考试成绩 : TOEFL:100， SAT:1560，GPA:3.90</span>
+            </div>
+            <div class="box fl">
+                <img src="./static/home/img/page/yingxiaogl/changchunteng4.jpg" alt="">
+                <h4>G同学</h4>
+                <p>宾夕法尼亚大学</p>
+                <span>考试成绩 : TOEFL:107， SAT:1480，GPA:4.12</span>
+            </div>
+        </div>
+        <a onclick="go()" class="a">想跟他们一样，点击咨询</a>
+    </div>
+
+    <!-- 去留学你需要做什么 -->
+    <div class="quliuxue g">
+        <h3 class="title">去留学你需要做什么</h3>
+        <table>
+            <tr>
+                <th>时间</th>
+                <th>你需要做的</th>
+                <th>我能为你做的</th>
+            </tr>
+            <tr>
+                <td>3-4月</td>
+                <td>制定留学规划，锁定申请目标学校</td>
+                <td rowspan="5">
+                    <p>①职业测评报告分析<br>②优选导师全程规划<br>③遴选个性化背景提升项目<br>(义工，马术，高尔夫，专利)<br>④优选导师模拟面试辅导<br>⑤个性化选校方案制定<br>⑥优选文书和申请服务<br>⑦优质夏校申请服务
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>5-6月</td>
+                <td>注册TOFEL、SAT考试，参加第一次SAT考试</td>
+            </tr>
+            <tr>
+                <td>7-9月</td>
+                <td>参加TOFEL考试，开通学校网申系统，准备申请资料</td>
+            </tr>
+            <tr>
+                <td>10-11月</td>
+                <td>常规申请或EA/ED申请；个人简历创作并提交网申表格</td>
+            </tr>
+            <tr>
+                <td>12月</td>
+                <td>提供成绩单；提交网申系统，并交纳申请费</td>
+            </tr>
+            <tr>
+                <td>次年1-2月</td>
+                <td>追踪申请结果，查看学校通知</td>
+                <td>全程院校申请跟进服务最终录取选择建议及指导</td>
+            </tr>
+            <tr>
+                <td>次年3-4月</td>
+                <td>收到录取通知，并拿到I-20表格</td>
+                <td rowspan="2">①签证服务离境指导<br>②接机服务<br>③美国模拟课程先适应服务<br>时间管理，公共演讲，创意写作，学术论文，辩论，沟通技能等</td>
+            </tr>
+            <tr>
+                <td>次年5-6月</td>
+                <td>行前准备，机票预定、行李准备、签证准备</td>
+            </tr>
+            <tr>
+                <td>次年8月</td>
+                <td>前往美国入学</td>
+                <td><span>①住宿安排：学校宿舍或者寄宿家庭<br>②住家报告：住家审核，寄宿家庭安全背景调查服务，住家视频沟通，住家上门沟通考察每月学生情况反馈报告）<br>③学术辅导
+                        ④定时家访<br>⑤参加家长会 ⑥紧急情况处理和实时沟通<br>⑦在美财务管理 ⑧大学教育规划<br>⑨假期出行安排 ⑩权益保障</span></td>
+            </tr>
+        </table>
+        <a onclick="go()" class="a">点击咨询留学服务流程</a>
+    </div>
+
+    <!-- 与海外同专业导师1对1沟通 -->
+    <div class="goutong">
+        <h3 class="title">与海外同专业导师1对1沟通 </h3>
+        <div class="swiper-container g">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide clearfix">
+                    <div class="box fl">
+                        <img src="./static/home/img/page/yingxiaogl/daoshi1.jpg" alt="">
+                        <h4>Mentor Gao</h4>
+                        <p>哈佛大学物理学博士</p>
+                        <span>哥伦比亚大学<br>应用物理/数学硕士</span>
+                    </div>
+                    <div class="box fl">
+                        <img src="./static/home/img/page/yingxiaogl/daoshi2.jpg" alt="">
+                        <h4>Evan</h4>
+                        <p>哥伦比亚大学英语教学硕士</p>
+                        <span>威斯康辛大学麦迪逊分校<br>政治学学士</span>
+                    </div>
+                    <div class="box fl">
+                        <img src="./static/home/img/page/yingxiaogl/daoshi3.jpg" alt="">
+                        <h4>Mentor Liu</h4>
+                        <p>哥伦比亚大学生物医学硕士</p>
+                        <span>伦斯勒理工学院<br>生物医学学士</span>
+                    </div>
+                </div>
+                <div class="swiper-slide clearfix">
+                    <div class="box fl">
+                        <img src="./static/home/img/page/yingxiaogl/daoshi4.jpg" alt="">
+                        <h4>Mentor Shen</h4>
+                        <p>哥伦比亚大学文科硕士</p>
+                        <span>香港中文大学<br>文科学士</span>
+                    </div>
+                    <div class="box fl">
+                        <img src="./static/home/img/page/yingxiaogl/daoshi5.jpg" alt="">
+                        <h4>Mentor Wang</h4>
+                        <p>斯坦福大学生物博士后</p>
+                        <span>爱丁堡大学生物博士</span>
+                    </div>
+                    <div class="box fl">
+                        <img src="./static/home/img/page/yingxiaogl/daoshi6.jpg" alt="">
+                        <h4>Mentor Li</h4>
+                        <p>宾夕法尼亚大学教育学硕士</p>
+                        <span>中田纳西州立大学<br>文学学士</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <a onclick="go()" class="a">马上获取与海外导师1v1沟通机会</a>
+    </div>
+
+    <!-- 关于留学教育 -->
+    <div class="guanyu g">
+        <h3 class="title">关于留学教育</h3>
+        <p>留学国际教育咨询有限公司简称留学教育，于2006年在洛杉矶成立，提供美国留学申请、本科及研究生出国考试辅导，背景提升，出国语言与考试辅导、海外监管、寄宿家庭安置、职业规划咨询服务。中国总部位于北京，美国总部位于加州洛杉矶。
+        </p>
+        <p>公司服务范围涉及全国，并在美国设有16家境外服务中心，与上千所美国院校建立了长期稳定的合作关系。每年帮助数百位学子圆梦哈佛大学、麻省理工学院、斯坦福大学、耶鲁大学等世界名校。</p>
+        <p>留学教育服务模式为“6位1体”导师服务，提升准留学生们的TOEFL、TOEFL Junior、IELTS、ITEP-slate
+            等语言考试成绩和SSAT、SAT、ACT、GRE、GMAT等标化考试成绩，助力准留学生顺利获得心仪学校的offer。</p>
+    </div>
+    <script>
+        var mySwiper = new Swiper('.swiper-container', {
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            }
+        })
+    </script>
+    <div style="text-align: center; background-color: #333333; color: #ffffff; padding: 40px 0 30px; font-size: 14px;">
+        <p>公司名称：洛阳中之豫教育科技有限公司</p>
+    </div>
+
+    <!-- 导航++底部  CSS++JS -->
+    <link rel="stylesheet" href="./static/home/css/index/public.css" />
+    <script type="text/javascript" src="./static/home/js/index/yingxiaopublic.js"></script>
+    <!-- 粒子链接 -->
+    <script type="text/javascript" src="./static/home/js/public/canvas-particle.js"></script>
+    <!-- 数字滚动插件 -->
+    <script type="text/javascript" src="./static/home/js/public/countUp.min.js"></script>
+
+    <!-- <script language="javascript" src="https://dvt.zoosnet.net/JS/LsJS.aspx?siteid=DVT56740265&lng=cn"></script> -->
+    <script type="text/javascript" src="./static/home/js/page/count.js"></script>
+
+    <!-- 数字滚动插件 -->
+    <script type="text/javascript" src="./static/home/js/public/countUp.min.js"></script>
+    <script src="./static/home/js/public/http.js"></script>
+    <!-- <script src="./static/home/js/public/page_json/yingxiaogzsq_data.js"></script> -->
+    <script src="./static/home/js/public/tab.js"></script>
+    <script src="./static/home/js/page/yingxiaolxxx/index.js"></script>
+
+    <script src="./static/home/js/common/common_yingxiao.js"></script>
+    <link rel="stylesheet" href="./static/home/css/common/common_yingxiao.css">
+
+    <script src="./static/home/js/common/common_yingxiao2.js"></script>
+    <link rel="stylesheet" href="./static/home/css/common/common_yingxiao2.css">
+
+    <link rel="stylesheet" href="./static/home/css/common/common_yingxiaobuttom.css">
+
+    <link rel="stylesheet" href="./static/home/css/common/common_fForm.css">
+    <script src="./static/home/js/common/common_fForm.js"></script>
+</body>
+
+</html>
