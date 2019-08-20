@@ -1,18 +1,43 @@
-{include file="common/common_head"/}
+<!DOCTYPE html>
+<html>
 
-<!-- swiper -->
-<link rel="stylesheet" href="/static/mobile/css/pubilc/swiper/swiper.min.css">
-<script type="text/javascript" src="/static/mobile/js/pubilc/swiper/swiper.min.js"></script>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <meta name="renderer" content="webkit">
+    <link rel="shortcut icon" href="../static/home/img/favicon.ico">
+    <!-- 公共样式 -->
+    <link rel="stylesheet" href="./static/home/css/public/share.css" />
+    <!-- jQuery -->
+    <script type="text/javascript" src="./static/home/js/public/jquery-1.12.3.min.js"></script>
+    <!-- top -->
+    <link rel="stylesheet" href="./static/home/css/public/topNav.css" />
 
-<!-- 当前网页样式 -->
-<link rel="stylesheet" href="/static/home/css/page/yingxiaonewfw/index.css">
+    <script type="text/javascript" src="./static/home/js/public/qrcode.min.js"></script>
+
+    <!-- 粒子链接 -->
+    <script type="text/javascript" src="./static/home/js/public/canvas-particle.js"></script>
+    <!-- 数字滚动插件 -->
+    <script type="text/javascript" src="./static/home/js/public/countUp.min.js"></script>
+
+    <script type="text/javascript" src="./static/home/js/public/jquery.lazyload.js"></script>
+
+    <!-- swiper -->
+    <link rel="stylesheet" href="./static/home/css/public/swiper/idangerous.swiper.css" />
+    <script src="./static/home/js/public/swiper/idangerous.swiper.min.js" type="text/javascript" charset="utf-8">
+    </script>
+
+    <link rel="stylesheet" href="./static/home/css/common/common_calculation.css">
+    <script src="./static/fj.js"></script>
+    <script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=5SaMHni778BPbnZ1LzTmpZQzpAyrS0xi&s=1">
+    </script>
+    <script src="https://pv.sohu.com/cityjson?ie=utf-8"></script>
+    <!-- 当前网页样式 -->
+    <link rel="stylesheet" href="./static/home/css/page/yingxiaonewfw/index.css">
 
 </head>
 
 <body>
-    <!-- 导航 -->
-    {include file="common/common_yingxiaonav"/}
-
     <!-- banner -->
     <div class="banner"></div>
 
@@ -147,23 +172,23 @@
         <h3 class="title">拿到奖学金的学生们</h3>
         <div class="content g clearfix">
             <div class="box fl">
-                <img src="/static/home/img/yingxiaonewfw/student1.jpg" alt="">
+                <img src="./static/home/img/yingxiaonewfw/student1.jpg" alt="">
                 <h4>w同学</h4>
                 <p><b>获取奖学金：</b>$16,000</p>
                 <p><b>录取学校：</b>约翰霍普金斯大学</p>
                 <a onclick="go()">查看TA的申请方案&gt;&gt;</a>
             </div>
             <div class="box box2 fl">
-                <img src="/static/home/img/yingxiaonewfw/student2.jpg" alt="">
+                <img src="./static/home/img/yingxiaonewfw/student2.jpg" alt="">
                 <h4>w同学</h4>
                 <p><b>获取奖学金：</b>$15,000</p>
                 <p><b>录取学校：</b>华盛顿大学</p>
                 <a onclick="go()">查看TA的申请方案&gt;&gt;</a>
             </div>
             <div class="box box3 fl">
-                <img src="/static/home/img/yingxiaonewfw/student3.jpg" alt="">
+                <img src="./static/home/img/yingxiaonewfw/student3.jpg" alt="">
                 <h4>s同学</h4>
-                <p><b>获取奖学金：</b>$20,000  </p>
+                <p><b>获取奖学金：</b>$20,000 </p>
                 <p><b>录取学校：</b>艾姆赫斯特学院</p>
                 <a onclick="go()">查看TA的申请方案&gt;&gt;</a>
             </div>
@@ -177,42 +202,42 @@
         <div class="content clearfix">
             <div class="box fl">
                 <div class="img">
-                    <img src="/static/home/img/yingxiaonewfw/shengqian1.jpg" alt="">
+                    <img src="./static/home/img/yingxiaonewfw/shengqian1.jpg" alt="">
                     <span>吃</span>
                 </div>
                 <p>建议自己做饭</p>
             </div>
             <div class="box fl">
                 <div class="img">
-                    <img src="/static/home/img/yingxiaonewfw/shengqian2.jpg" alt="">
+                    <img src="./static/home/img/yingxiaonewfw/shengqian2.jpg" alt="">
                     <span>玩</span>
                 </div>
                 <p>有很多免费娱乐活动</p>
             </div>
             <div class="box fl">
                 <div class="img">
-                    <img src="/static/home/img/yingxiaonewfw/shengqian3.jpg" alt="">
+                    <img src="./static/home/img/yingxiaonewfw/shengqian3.jpg" alt="">
                     <span>住</span>
                 </div>
                 <p>寄宿家庭或学校宿舍</p>
             </div>
             <div class="box fl">
                 <div class="img">
-                    <img src="/static/home/img/yingxiaonewfw/shengqian4.jpg" alt="">
+                    <img src="./static/home/img/yingxiaonewfw/shengqian4.jpg" alt="">
                     <span>行</span>
                 </div>
                 <p>地铁公交更实惠</p>
             </div>
             <div class="box fl">
                 <div class="img">
-                    <img src="/static/home/img/yingxiaonewfw/shengqian5.jpg" alt="">
+                    <img src="./static/home/img/yingxiaonewfw/shengqian5.jpg" alt="">
                     <span>衣</span>
                 </div>
                 <p>国内带好</p>
             </div>
             <div class="box fl">
                 <div class="img">
-                    <img src="/static/home/img/yingxiaonewfw/shengqian6.jpg" alt="">
+                    <img src="./static/home/img/yingxiaonewfw/shengqian6.jpg" alt="">
                     <span>用</span>
                 </div>
                 <p>购买二手物品实用</p>
@@ -220,11 +245,9 @@
         </div>
         <a onclick="go()" class="a">想和他们一样，点击咨询&gt;&gt;</a>
     </div>
-
-    {include file="common/common_yingxiao"/}
-    {include file="common/common_yingxiao2"/}
-    {include file="common/common_yingxiaobuttom"/}
-    {include file="common/common_fForm"/}
+    <div style="text-align: center; background-color: #333333; color: #ffffff; padding: 40px 0 30px; font-size: 14px;">
+        <p>公司名称：洛阳中之豫教育科技有限公司</p>
+    </div>
     <!-- <script language="javascript" src="https://dvt.zoosnet.net/JS/LsJS.aspx?siteid=DVT56740265&lng=cn"></script> -->
     <script type="text/javascript" src="/static/home/js/page/count.js"></script>
 
