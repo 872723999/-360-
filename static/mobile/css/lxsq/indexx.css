@@ -1,0 +1,738 @@
+/* top_nav */
+.top_nav {
+    width: 100%;
+    height: 1.6rem;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    z-index: 998;
+}
+
+.top_nav img {
+    width: 3.68rem;
+    height: 1rem;
+    margin-top: 0.293333rem;
+    margin-left: 0.373333rem;
+}
+
+.top_nav>div.fr {
+    margin-top: 0.32rem;
+    margin-right: 0.373333rem;
+}
+
+.top_nav>div.fr p {
+    font-size: 0.373333rem;
+    color: #F85415;
+    margin-bottom: 0.026667rem;
+}
+
+.top_nav>div.fr span {
+    font-size: 0.32rem;
+}
+
+.top_nav>div.fr span b {
+    color: #F85415;
+}
+
+.top_nav1 {
+    width: 100%;
+    height: 1.6rem;
+}
+
+/* banner */
+.banner {
+    width: 100%;
+    height: 4.48rem;
+    background: url(../../img/lxsq/banner.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+/* title */
+h3.title {
+    width: 100%;
+    font-size: 0.56rem;
+    text-align: center;
+    margin: 0.853333rem 0 0.106667rem;
+    line-height: 0.933333rem;
+    position: relative;
+}
+
+h3.title>span {
+    z-index: 2;
+    position: relative;
+}
+
+h3.title>p {
+    width: 4.786667rem;
+    height: 0.32rem;
+    border-radius: 0.186667rem;
+    background-color: #E4E8FC;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 1;
+}
+
+h3.title>p::before,
+h3.title>p::after {
+    content: '';
+    width: 0.186667rem;
+    height: 0.186667rem;
+    border-radius: 50%;
+    background-color: #656DD9;
+    position: absolute;
+    top: 50%;
+    margin-top: -0.093333rem;
+}
+
+h3.title>p::before {
+    left: 0.08rem;
+}
+
+h3.title>p::after {
+    right: 0.08rem;
+}
+
+span.title {
+    text-align: center;
+    font-size: 0.346667rem;
+    color: #666666;
+    display: block;
+    margin-bottom: 0.64rem;
+}
+
+/* 美国留学领航者 */
+.linghangzhe .content {
+    width: 9.253333rem;
+    margin: 0 auto 0.853333rem;
+}
+
+.linghangzhe .content .box {
+    width: 1.973333rem;
+    height: 1.973333rem;
+    border-radius: 50%;
+    background-color: #9398E4;
+    color: #ffffff;
+    text-align: center;
+    margin-right: 0.4rem;
+}
+
+.linghangzhe .content .box:last-child {
+    margin-right: 0;
+}
+
+.linghangzhe .content .box::after {
+    content: '';
+    width: 0;
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.linghangzhe .content .box>div {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.linghangzhe .content .box h3 {
+    font-size: 0.48rem;
+    font-weight: normal;
+}
+
+.linghangzhe .content .box p {
+    font-size: 0.32rem;
+}
+
+.linghangzhe .content .box h4 {
+    font-size: 0.373333rem;
+    font-weight: normal;
+}
+
+/* a,a */
+a.a {
+    width: 9.253333rem;
+    height: 1.12rem;
+    border-radius: 0.106667rem;
+    background-color: #FF677A;
+    text-align: center;
+    margin: 0 auto 1.066667rem;
+    line-height: 1.12rem;
+    font-size: 0.48rem;
+    color: #ffffff;
+}
+
+/* 名校学长分享留学经验 */
+.lxjy {
+    width: 100%;
+    height: 10.48rem;
+    background: url(../../img/lxsq/beijing1.jpg) no-repeat center center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.lxjy .title {
+    color: #ffffff;
+}
+
+.lxjy h3.title {
+    margin-top: 0.8rem;
+}
+
+.lxjy span.title {
+    margin-bottom: 0.4rem;
+}
+
+.lxjy h3.title>p {
+    width: 6.48rem;
+    background-color: rgba(228, 232, 252, 0.23);
+}
+
+.lxjy h3.title>p::after,
+.lxjy h3.title>p::before {
+    background-color: #ffffff;
+}
+
+.lxjy .swiper-container {
+    width: 9.253333rem;
+    height: 4.426667rem;
+    border-radius: 0.16rem;
+    background-color: #ffffff;
+    margin: 0 auto;
+}
+
+.lxjy .swiper-slide .t img {
+    width: 1.973333rem;
+    height: 1.973333rem;
+    margin: 0.4rem 0.48rem 0 0.453333rem;
+}
+
+.lxjy .swiper-slide .t>div.fl {
+    margin-top: 0.6rem;
+}
+
+.lxjy .swiper-slide .t>div.fl h3 {
+    font-size: 0.4rem;
+    margin-bottom: 0.106667rem;
+}
+
+.lxjy .swiper-slide .t>div.fl p {
+    font-size: 0.346667rem;
+    margin-bottom: 0.026667rem;
+}
+
+.lxjy .swiper-slide .t>div.fl span {
+    font-size: 0.346667rem;
+}
+
+.lxjy .swiper-slide .t a {
+    width: 2.453333rem;
+    height: 0.693333rem;
+    border-radius: 0.4rem;
+    text-align: center;
+    line-height: 0.693333rem;
+    background-color: #656DD9;
+    font-size: 0.32rem;
+    color: #ffffff;
+    position: absolute;
+    right: 0.44rem;
+    top: 0.6rem;
+}
+
+.lxjy .swiper-slide h4 {
+    width: 8.32rem;
+    font-size: 0.346667rem;
+    line-height: 0.533333rem;
+    margin: 0 auto;
+    margin-top: 0.4rem;
+}
+
+.lxjy .swiper-pagination {
+    text-align: center;
+    position: static;
+    margin-top: 0.266667rem;
+}
+
+.lxjy .swiper-pagination span {
+    width: 0.213333rem;
+    height: 0.213333rem;
+    background-color: #FFFFFF;
+    opacity: 1;
+    margin-right: 0.16rem;
+}
+
+.lxjy .swiper-pagination span:last-child {
+    margin-right: 0;
+}
+
+.lxjy .swiper-pagination span.swiper-pagination-bullet-active {
+    background-color: #FF677A;
+}
+
+.lxjy a.a {
+    margin-bottom: 0;
+    margin-top: 0.266667rem;
+}
+
+/* 美国名校留学方案 */
+.lxfa h3.title {
+    margin-bottom: 0.533333rem;
+}
+
+.lxfa h3.title p {
+    width: 5.333333rem;
+}
+
+.lxfa .content {
+    width: 9.253333rem;
+    margin: 0 auto;
+}
+
+.lxfa .content .box {
+    width: 2.88rem;
+    height: 2.346667rem;
+    border: 0.026667rem solid #E9E9E9;
+    border-radius: 0.066667rem;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.08);
+    margin-bottom: 0.293333rem;
+    margin-right: 0.266667rem;
+}
+
+.lxfa .content .box:nth-child(3n) {
+    margin-right: 0;
+}
+
+.lxfa .content .box p {
+    text-align: center;
+    font-size: 0.4rem;
+    line-height: 0.48rem;
+    font-weight: bold;
+    margin-top: 0.266667rem;
+    margin-bottom: 0.186667rem;
+}
+
+.lxfa .content .box a {
+    width: 2.44rem;
+    height: 0.586667rem;
+    border-radius: 0.4rem;
+    background-color: #9398E4;
+    text-align: center;
+    line-height: 0.586667rem;
+    font-size: 0.32rem;
+    color: #ffffff;
+    margin: 0 auto;
+}
+
+.lxfa a.a {
+    margin-top: 0.533333rem;
+}
+
+/* 美国留学高端定制服务 */
+.dzfw h3.title>p {
+    width: 6.426667rem;
+}
+
+.dzfw .box {
+    width: 9.253333rem;
+    margin: 0 auto 0.533333rem;
+}
+
+.dzfw .box img {
+    width: 3.733333rem;
+    height: 2.506667rem;
+    margin-right: 0.4rem;
+}
+
+.dzfw .box>div.fl {
+    width: 4.853333rem;
+}
+
+.dzfw .box>div.fl h3 {
+    font-size: 0.48rem;
+    padding: 0.066667rem 0 0.093333rem;
+}
+
+.dzfw .box>div.fl p {
+    font-size: 0.346667rem;
+    color: #666666;
+    padding-bottom: 0.373333rem;
+}
+
+.dzfw .box>div.fl .a {
+    font-size: 0;
+}
+
+.dzfw .box>div.fl .a a {
+    width: 1.813333rem;
+    height: 0.64rem;
+    text-align: center;
+    line-height: 0.64rem;
+    border: 0.026667rem solid #656DD9;
+    border-radius: 0.08rem;
+    font-size: 0.32rem;
+    color: #ffffff;
+    background-color: #656DD9;
+    display: inline-block;
+    margin-right: 0.346667rem;
+}
+
+.dzfw .box>div.fl .a a:last-child {
+    margin-right: 0;
+    background-color: transparent;
+    color: #656DD9;
+}
+
+/* 美国留学，你关注的都在这里 */
+.guanzhu {
+    width: 100%;
+    height: 11.906667rem;
+    background: url(../../img/lxsq/beijing2.jpg) no-repeat center center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.guanzhu h3.title {
+    margin-bottom: 0.533333rem;
+}
+
+.guanzhu h3.title>p {
+    width: 8.16rem;
+}
+
+.guanzhu .box {
+    width: 9.253333rem;
+    height: 2.186667rem;
+    border: 0.026667rem solid #D6D6D6;
+    border-radius: 0.04rem;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    margin: 0 auto 0.266667rem;
+}
+
+.guanzhu .box h3 {
+    font-size: 0.373333rem;
+    margin: 0.266667rem 0 0.146667rem 0.266667rem;
+}
+
+.guanzhu .box h3::before {
+    content: '';
+    width: 0.533333rem;
+    height: 0.533333rem;
+    background: url(../../img/lxsq/wenti.png) no-repeat center center;
+    background-size: cover;
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 0.053333rem;
+    margin-right: 0.133333rem;
+}
+
+.guanzhu .box>div span,
+.guanzhu .box>div p,
+.guanzhu .box>div a {
+    display: inline-block;
+}
+
+.guanzhu .box>div {
+    margin-left: 1.04rem;
+}
+
+.guanzhu .box>div span,
+.guanzhu .box>div p {
+    font-size: 0.32rem;
+    color: #888888;
+    margin-right: 0.533333rem;
+}
+
+.guanzhu .box>div span::before,
+.guanzhu .box>div p::before {
+    content: '';
+    width: 0.373333rem;
+    height: 0.373333rem;
+    background: url(../../img/lxsq/liulan.png) no-repeat center center;
+    background-size: cover;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 0.106667rem;
+}
+
+.guanzhu .box>div p::before {
+    background-image: url(../../img/lxsq/huida.png);
+}
+
+.guanzhu .box>div a {
+    width: 2.293333rem;
+    height: 0.746667rem;
+    text-align: center;
+    line-height: 0.746667rem;
+    background-color: #9398E4;
+    border-radius: 0.4rem;
+    font-size: 0.373333rem;
+    color: #ffffff;
+    float: right;
+    margin-right: 0.346667rem;
+}
+
+.guanzhu .box>div {
+    height: 0.746667rem;
+    line-height: 0.746667rem;
+}
+
+.guanzhu a.a {
+    margin-top: 0.533333rem;
+}
+
+/* 美国留学费用全解析 */
+.jiexi h3.title>p {
+    width: 5.893333rem;
+}
+
+.jiexi h3.title {
+    margin-bottom: 0.586667rem;
+}
+
+.jiexi .t {
+    text-align: center;
+    font-size: 0;
+    margin-bottom: 0.48rem;
+}
+
+.jiexi .t span {
+    width: 2.826667rem;
+    height: 0.8rem;
+    border: 0.026667rem solid #656DD9;
+    text-align: center;
+    line-height: 0.8rem;
+    font-size: 0.426667rem;
+    display: inline-block;
+    border-radius: 0.533333rem;
+    color: #5C6CD9;
+    margin-right: 0.373333rem;
+}
+
+.jiexi .t span:last-child {
+    margin-right: 0;
+}
+
+.jiexi .t span.active {
+    background-color: #656DD9;
+    color: #ffffff;
+}
+
+.jiexi .b {
+    width: 9.253333rem;
+    margin: 0 auto;
+}
+
+.jiexi .b .box {
+    width: 100%;
+    height: 10.746667rem;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    border-radius: 0.213333rem;
+    display: none;
+}
+
+.jiexi .b .box .img {
+    width: 100%;
+    text-align: center;
+    height: 2.093333rem;
+    line-height: 2.093333rem;
+    background: url(../../img/lxsq/yanjiusheng.jpg) no-repeat center center;
+    background-size: cover;
+    font-size: 0.506667rem;
+    color: #ffffff;
+}
+
+.jiexi .b .box h3 {
+    font-size: 0.426667rem;
+    color: #656DD9;
+    margin: 0.48rem 0 0.133333rem 0.426667rem;
+}
+
+.jiexi .b .box h3::before {
+    content: '';
+    width: 0.586667rem;
+    height: 0.586667rem;
+    background: url(../../img/lxsq/icon1.png) no-repeat center center;
+    background-size: cover;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 0.266667rem;
+    margin-bottom: 0.066667rem;
+}
+
+.jiexi .b .box p {
+    font-size: 0.346667rem;
+    margin-bottom: 0.053333rem;
+    padding-left: 1.28rem;
+}
+
+.jiexi .b .box h3.h32::before {
+    background-image: url(../../img/lxsq/icon2.png);
+}
+
+.jiexi .b .box a.a {
+    width: 8.426667rem;
+    margin: 0 auto;
+    margin-top: 0.266667rem;
+}
+
+/* 不止于申请成功，服务至学生毕业 */
+.biye h3.title>p {
+    width: 9.253333rem;
+}
+
+.biye h3.title {
+    margin-bottom: 0.64rem;
+}
+
+.biye .content {
+    width: 9.253333rem;
+    margin: 0 auto;
+}
+
+.biye .content .box {
+    width: 4.48rem;
+    height: 3.853333rem;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.16);
+    margin-bottom: 0.426667rem;
+    margin-right: 0.266667rem;
+}
+
+.biye .content .box:nth-child(2n) {
+    margin-right: 0;
+}
+
+.biye .content .box .img {
+    width: 100%;
+    height: 2.52rem;
+    background: url(../../img/lxsq/fuwu1.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.biye .content .box2 .img {
+    background-image: url(../../img/lxsq/fuwu2.jpg);
+}
+
+.biye .content .box3 .img {
+    background-image: url(../../img/lxsq/fuwu3.jpg);
+}
+
+.biye .content .box4 .img {
+    background-image: url(../../img/lxsq/fuwu4.jpg);
+}
+
+.biye .content .box5 .img {
+    background-image: url(../../img/lxsq/fuwu5.jpg);
+}
+
+.biye .content .box6 .img {
+    background-image: url(../../img/lxsq/fuwu6.jpg);
+}
+
+.biye .content .box .img h3 {
+    width: 100%;
+    height: 0.72rem;
+    line-height: 0.72rem;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    font-size: 0.373333rem;
+    color: #ffffff;
+    font-weight: normal;
+}
+
+.biye .content .box>p {
+    font-size: 0.32rem;
+    text-align: center;
+    padding-top: 0.24rem;
+}
+
+.biye a.a {
+    margin-top: 0.533333rem;
+}
+
+/* 彬彬教育 解决你的留学烦恼 */
+.form {
+    width: 100%;
+    height: 7.746667rem;
+    background: url(../../img/lxsq/beijing3.jpg) no-repeat center center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.form h3.title {
+    color: #ffffff;
+    margin: 0.773333rem 0 0.586667rem;
+}
+
+.form input {
+    width: 9.253333rem;
+    height: 1.173333rem;
+    border-radius: 0.106667rem;
+    background-color: #ffffff;
+    font-size: 0.4rem;
+    display: block;
+    margin: 0 auto 0.373333rem;
+    text-indent: 0.373333rem;
+}
+
+.form button {
+    width: 9.253333rem;
+    height: 1.173333rem;
+    line-height: 1.173333rem;
+    text-align: center;
+    background-color: #FF677A;
+    border-radius: 0.8rem;
+    display: block;
+    margin: 0 auto;
+    font-size: 0.48rem;
+    color: #ffffff;
+    margin-top: 0.586667rem;
+}
+
+/* bb */
+.bb {
+    width: 100%;
+    height: 1.28rem;
+    font-size: 0;
+    position: fixed;
+    bottom: 0;
+    z-index: 9999;
+}
+
+.bb a {
+    display: inline-block;
+    font-size: 0.426667rem;
+    line-height: 1.28rem;
+    width: 50%;
+    text-align: center;
+    background-color: #FF9407;
+    color: #ffffff;
+}
+
+.bb a::before {
+    content: '';
+    width: 0.533333rem;
+    height: 0.533333rem;
+    display: inline-block;
+    background: url(../../img/yingxiaoform/phone.png) no-repeat center center;
+    background-size: cover;
+    vertical-align: middle;
+    margin-bottom: 0.053333rem;
+    margin-right: 0.16rem;
+}
+
+.bb .a2 {
+    background-color: #E93636;
+}
+
+.bb .a2::before {
+    background-image: url(../../img/yingxiaoform/zx.png);
+}
+
+.bb1 {
+    width: 100%;
+    height: 1.28rem;
+}

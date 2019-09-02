@@ -60,6 +60,7 @@ $http.post("https://www.beliwin.com/Apiface/liuxue", {
             if (!chengji || chengji == "-") {
                 chengji = "--";
             }
+            element.us_rank == 0 ? element.us_rank = 1 : element.us_rank;
             str += `<tr>
             <td>`+ element.us_rank + `</td>
             <td>`+ element.name_zh + `</td>
