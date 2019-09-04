@@ -364,5 +364,210 @@ a.a {
 .bb1 {
     width: 100%;
     height: 1.28rem;
+}
+
+/* 美国留学，你关注的都在这里 */
+.guanzhu {
+    width: 100%;
+    height: 11.906667rem;
+    background: url(../../img/lxsq/beijing2.jpg) no-repeat center center;
+    background-size: cover;
+    overflow: hidden;
+    margin-top: 1.066667rem;
+}
+
+.guanzhu .box {
+    width: 9.253333rem;
+    height: 2.186667rem;
+    border: 0.026667rem solid #D6D6D6;
+    border-radius: 0.04rem;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    margin: 0 auto 0.266667rem;
+}
+
+.guanzhu .box h3 {
+    font-size: 0.373333rem;
+    margin: 0.266667rem 0 0.146667rem 0.266667rem;
+}
+
+.guanzhu .box h3::before {
+    content: '';
+    width: 0.533333rem;
+    height: 0.533333rem;
+    background: url(../../img/lxsq/wenti.png) no-repeat center center;
+    background-size: cover;
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 0.053333rem;
+    margin-right: 0.133333rem;
+}
+
+.guanzhu .box>div span,
+.guanzhu .box>div p,
+.guanzhu .box>div a {
+    display: inline-block;
+}
+
+.guanzhu .box>div {
+    margin-left: 1.04rem;
+}
+
+.guanzhu .box>div span,
+.guanzhu .box>div p {
+    font-size: 0.32rem;
+    color: #888888;
+    margin-right: 0.533333rem;
+}
+
+.guanzhu .box>div span::before,
+.guanzhu .box>div p::before {
+    content: '';
+    width: 0.373333rem;
+    height: 0.373333rem;
+    background: url(../../img/lxsq/liulan.png) no-repeat center center;
+    background-size: cover;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 0.106667rem;
+}
+
+.guanzhu .box>div p::before {
+    background-image: url(../../img/lxsq/huida.png);
+}
+
+.guanzhu .box>div a {
+    width: 2.293333rem;
+    height: 0.746667rem;
+    text-align: center;
+    line-height: 0.746667rem;
+    background-color: #9398E4;
+    border-radius: 0.4rem;
+    font-size: 0.373333rem;
+    color: #ffffff;
+    float: right;
+    margin-right: 0.346667rem;
+}
+
+.guanzhu .box>div {
+    height: 0.746667rem;
+    line-height: 0.746667rem;
+}
+
+.guanzhu a.a {
     margin-top: 0.533333rem;
+}
+
+/* 不止于申请成功，服务至学生毕业 */
+.biye h3.title>p {
+    width: 9.253333rem;
+}
+
+.biye h3.title {
+    margin-bottom: 0.64rem;
+}
+
+.biye .content {
+    width: 9.253333rem;
+    margin: 0 auto;
+}
+
+.biye .content .box {
+    width: 4.48rem;
+    height: 3.853333rem;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.16);
+    margin-bottom: 0.426667rem;
+    margin-right: 0.266667rem;
+}
+
+.biye .content .box:nth-child(2n) {
+    margin-right: 0;
+}
+
+.biye .content .box .img {
+    width: 100%;
+    height: 2.52rem;
+    background: url(../../img/lxsq/fuwu1.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.biye .content .box2 .img {
+    background-image: url(../../img/lxsq/fuwu2.jpg);
+}
+
+.biye .content .box3 .img {
+    background-image: url(../../img/lxsq/fuwu3.jpg);
+}
+
+.biye .content .box4 .img {
+    background-image: url(../../img/lxsq/fuwu4.jpg);
+}
+
+.biye .content .box5 .img {
+    background-image: url(../../img/lxsq/fuwu5.jpg);
+}
+
+.biye .content .box6 .img {
+    background-image: url(../../img/lxsq/fuwu6.jpg);
+}
+
+.biye .content .box .img h3 {
+    width: 100%;
+    height: 0.72rem;
+    line-height: 0.72rem;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    font-size: 0.373333rem;
+    color: #ffffff;
+    font-weight: normal;
+}
+
+.biye .content .box>p {
+    font-size: 0.32rem;
+    text-align: center;
+    padding-top: 0.24rem;
+}
+
+.biye a.a {
+    margin-top: 0.533333rem;
+}
+
+/* 彬彬教育 解决你的留学烦恼 */
+.form {
+    width: 100%;
+    height: 7.746667rem;
+    background: url(../../img/lxsq/beijing3.jpg) no-repeat center center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.form h3.title {
+    color: #ffffff;
+}
+
+.form input {
+    width: 9.253333rem;
+    height: 1.173333rem;
+    border-radius: 0.106667rem;
+    background-color: #ffffff;
+    font-size: 0.4rem;
+    display: block;
+    margin: 0 auto 0.373333rem;
+    text-indent: 0.373333rem;
+}
+
+.form button {
+    width: 9.253333rem;
+    height: 1.173333rem;
+    line-height: 1.173333rem;
+    text-align: center;
+    background-color: #FF677A;
+    border-radius: 0.8rem;
+    display: block;
+    margin: 0 auto;
+    font-size: 0.48rem;
+    color: #ffffff;
+    margin-top: 0.586667rem;
 }
